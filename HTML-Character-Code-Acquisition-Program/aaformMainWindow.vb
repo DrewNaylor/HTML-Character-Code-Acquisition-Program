@@ -71,4 +71,10 @@ Public Class aaformMainWindow
         ' Now trim the end.
         textboxOutput.Text = textboxOutput.Text.TrimEnd
     End Sub
+
+    Private Sub textboxInput_TextChanged(sender As Object, e As EventArgs) Handles textboxInput.TextChanged
+        ' After a key is pressed, search the XML file if the user has
+        ' Search when Typing enabled.
+        buttonSearch.PerformClick()
+    End Sub
 End Class
