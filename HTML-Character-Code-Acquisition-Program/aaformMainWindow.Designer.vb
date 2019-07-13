@@ -135,6 +135,8 @@ Partial Class aaformMainWindow
         Me.TextBox2.Location = New System.Drawing.Point(3, 31)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
+        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TextBox2.Size = New System.Drawing.Size(394, 246)
         Me.TextBox2.TabIndex = 2
         '
