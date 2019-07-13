@@ -1,5 +1,5 @@
 # HTML-Character-Code-Acquisition-Program
-Developer tool to look up HTML character codes.
+Developer tool to look up HTML character codes/HTML character entities.
 
 
 Features to add:
