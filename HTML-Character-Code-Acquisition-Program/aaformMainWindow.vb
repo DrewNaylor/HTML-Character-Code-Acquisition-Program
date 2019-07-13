@@ -2,11 +2,16 @@
 
 Public Class aaformMainWindow
     Private Sub buttonSearch_Click(sender As Object, e As EventArgs) Handles buttonSearch.Click
+        ' Remove all text from the output textbox so it
+        ' doesn't get cluttered up, then get the character
+        ' codes.
         textboxOutput.Clear()
         getCodes()
     End Sub
 
+    ' The XML file we want to search.
     Private Shared xmlFileToSearch As XmlDocument = New XmlDocument()
+    ' The namespace manager for handling namespaces.
     Private Shared searchNamespaceManager As New XmlNamespaceManager(xmlFileToSearch.NameTable)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
