@@ -6,22 +6,24 @@ Public Class aaformMainWindow
         getCodes()
     End Sub
 
-    Private Shared fileToSearchFrom As XmlDocument = New XmlDocument()
-    Private Shared searchNamespaceManager As New XmlNamespaceManager(fileToSearchFrom.NameTable)
+    Private Shared xmlFileToSearch As XmlDocument = New XmlDocument()
+    Private Shared searchNamespaceManager As New XmlNamespaceManager(xmlFileToSearch.NameTable)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         searchNamespaceManager.AddNamespace("hccap", "https://drewnaylor.github.io/xml")
         Debug.WriteLine(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
-        fileToSearchFrom.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
-        Debug.WriteLine(fileToSearchFrom.OuterXml.ToString.Replace("_", "&"))
+        xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
+        Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
     End Sub
 
     Private Sub getCodes()
-        For Each node As XmlNode In fileToSearchFrom.SelectSingleNode("/root/characterCodeSection")
+        For Each node As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
             Debug.WriteLine("node.InnerText: " & node.InnerText)
             If node.InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
                 textboxOutput.AppendText(node.InnerText.Replace("_", "&") & vbCrLf)
             End If
         Next
+        ' Now trim the end.
+        textboxOutput.Text = textboxOutput.Text.TrimEnd
     End Sub
 End Class
