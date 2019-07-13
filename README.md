@@ -1,4 +1,4 @@
-# HTML-Character-Code-Acquisition-Program
+# HTML Character Code Acquisition Program
 Developer tool to look up HTML character codes/HTML character entities.
 
 | Overall project status | Master branch status |
