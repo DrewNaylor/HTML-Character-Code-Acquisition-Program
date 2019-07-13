@@ -32,10 +32,10 @@ Partial Class aaformMainWindow
         Me.menubarHelpMenuAboutButton = New System.Windows.Forms.ToolStripMenuItem()
         Me.textboxInput = New System.Windows.Forms.TextBox()
         Me.buttonSearch = New System.Windows.Forms.Button()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.tablelayoutpanelMainWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.textboxOutput = New System.Windows.Forms.TextBox()
         Me.menubarMainWindow.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.tablelayoutpanelMainWindow.SuspendLayout()
         Me.SuspendLayout()
         '
         'statusbarMainWindow
@@ -111,26 +111,26 @@ Partial Class aaformMainWindow
         Me.buttonSearch.Text = "Search"
         Me.buttonSearch.UseVisualStyleBackColor = True
         '
-        'TableLayoutPanel1
+        'tablelayoutpanelMainWindow
         '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonSearch, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.textboxInput, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.textboxOutput, 0, 1)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 24)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(400, 280)
-        Me.TableLayoutPanel1.TabIndex = 3
+        Me.tablelayoutpanelMainWindow.ColumnCount = 2
+        Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71.0!))
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.buttonSearch, 1, 0)
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.textboxInput, 0, 0)
+        Me.tablelayoutpanelMainWindow.Controls.Add(Me.textboxOutput, 0, 1)
+        Me.tablelayoutpanelMainWindow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tablelayoutpanelMainWindow.Location = New System.Drawing.Point(0, 24)
+        Me.tablelayoutpanelMainWindow.Name = "tablelayoutpanelMainWindow"
+        Me.tablelayoutpanelMainWindow.RowCount = 2
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(400, 280)
+        Me.tablelayoutpanelMainWindow.TabIndex = 3
         '
         'textboxOutput
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.textboxOutput, 2)
+        Me.tablelayoutpanelMainWindow.SetColumnSpan(Me.textboxOutput, 2)
         Me.textboxOutput.Dock = System.Windows.Forms.DockStyle.Fill
         Me.textboxOutput.Location = New System.Drawing.Point(3, 31)
         Me.textboxOutput.Multiline = True
@@ -145,7 +145,7 @@ Partial Class aaformMainWindow
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(400, 326)
-        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.tablelayoutpanelMainWindow)
         Me.Controls.Add(Me.statusbarMainWindow)
         Me.Controls.Add(Me.menubarMainWindow)
         Me.MainMenuStrip = Me.menubarMainWindow
@@ -153,8 +153,8 @@ Partial Class aaformMainWindow
         Me.Text = "HTML Character Code Acquisition Program"
         Me.menubarMainWindow.ResumeLayout(False)
         Me.menubarMainWindow.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.PerformLayout()
+        Me.tablelayoutpanelMainWindow.ResumeLayout(False)
+        Me.tablelayoutpanelMainWindow.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -170,6 +170,6 @@ Partial Class aaformMainWindow
     Friend WithEvents menubarHelpMenuAboutButton As ToolStripMenuItem
     Friend WithEvents textboxInput As TextBox
     Friend WithEvents buttonSearch As Button
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents tablelayoutpanelMainWindow As TableLayoutPanel
     Friend WithEvents textboxOutput As TextBox
 End Class
