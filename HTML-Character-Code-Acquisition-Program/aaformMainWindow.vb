@@ -10,7 +10,7 @@ Public Class aaformMainWindow
     Private Shared searchNamespaceManager As New XmlNamespaceManager(xmlFileToSearch.NameTable)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        searchNamespaceManager.AddNamespace("hccap", "https://drewnaylor.github.io/xml")
+        searchNamespaceManager.AddNamespace("html-ccap", "https://drewnaylor.github.io/xml")
         Debug.WriteLine(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
         xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
