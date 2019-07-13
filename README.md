@@ -34,9 +34,10 @@ along with html-ccap.  If not, see <http://www.gnu.org/licenses/>.
 
 Features to add:
 
-- Search when typing
-- Search on Enter
+- Search when typing (if the user wants it that way)
+- Search on Enter (if the user wants it to work like that instead of when typing)
 - An option to hide the Search button if the user wants to
 - Updating the XML file from the Options window.
+- Functionality for the menubar items, like File\Exit, Tools\Options, and Help\About.
 
 Some more features need to be added to this list from my OneNote notebook.
