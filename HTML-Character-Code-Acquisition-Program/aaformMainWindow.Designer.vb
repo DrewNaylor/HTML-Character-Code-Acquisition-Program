@@ -23,14 +23,14 @@ Partial Class aaformMainWindow
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
+        Me.menubarMainWindow = New System.Windows.Forms.MenuStrip()
+        Me.menubarFileMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menubarFileMenuExitButton = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menubarToolsMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menubarToolsMenuOptionsButton = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menubarHelpMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menubarHelpMenuAboutButton = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menubarMainWindow.SuspendLayout()
         Me.SuspendLayout()
         '
         'StatusStrip1
@@ -39,55 +39,55 @@ Partial Class aaformMainWindow
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(409, 22)
         Me.StatusStrip1.TabIndex = 0
-        Me.StatusStrip1.Text = "StatusStrip1"
+        Me.StatusStrip1.Text = "statusbarMainWindow"
         '
-        'MenuStrip1
+        'menubarMainWindow
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ToolsToolStripMenuItem, Me.HelpToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(409, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.menubarMainWindow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenu, Me.menubarToolsMenu, Me.menubarHelpMenu})
+        Me.menubarMainWindow.Location = New System.Drawing.Point(0, 0)
+        Me.menubarMainWindow.Name = "menubarMainWindow"
+        Me.menubarMainWindow.Size = New System.Drawing.Size(409, 24)
+        Me.menubarMainWindow.TabIndex = 1
+        Me.menubarMainWindow.Text = "MenuStrip1"
         '
-        'FileToolStripMenuItem
+        'menubarFileMenu
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "&File"
+        Me.menubarFileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenuExitButton})
+        Me.menubarFileMenu.Name = "menubarFileMenu"
+        Me.menubarFileMenu.Size = New System.Drawing.Size(37, 20)
+        Me.menubarFileMenu.Text = "&File"
         '
-        'ExitToolStripMenuItem
+        'menubarFileMenuExitButton
         '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ExitToolStripMenuItem.Text = "&Exit"
+        Me.menubarFileMenuExitButton.Name = "menubarFileMenuExitButton"
+        Me.menubarFileMenuExitButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarFileMenuExitButton.Text = "&Exit"
         '
-        'ToolsToolStripMenuItem
+        'menubarToolsMenu
         '
-        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OptionsToolStripMenuItem})
-        Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
-        Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
-        Me.ToolsToolStripMenuItem.Text = "&Tools"
+        Me.menubarToolsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarToolsMenuOptionsButton})
+        Me.menubarToolsMenu.Name = "menubarToolsMenu"
+        Me.menubarToolsMenu.Size = New System.Drawing.Size(47, 20)
+        Me.menubarToolsMenu.Text = "&Tools"
         '
-        'OptionsToolStripMenuItem
+        'menubarToolsMenuOptionsButton
         '
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OptionsToolStripMenuItem.Text = "&Options"
+        Me.menubarToolsMenuOptionsButton.Name = "menubarToolsMenuOptionsButton"
+        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarToolsMenuOptionsButton.Text = "&Options"
         '
-        'HelpToolStripMenuItem
+        'menubarHelpMenu
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "&Help"
+        Me.menubarHelpMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarHelpMenuAboutButton})
+        Me.menubarHelpMenu.Name = "menubarHelpMenu"
+        Me.menubarHelpMenu.Size = New System.Drawing.Size(44, 20)
+        Me.menubarHelpMenu.Text = "&Help"
         '
-        'AboutToolStripMenuItem
+        'menubarHelpMenuAboutButton
         '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AboutToolStripMenuItem.Text = "&About"
+        Me.menubarHelpMenuAboutButton.Name = "menubarHelpMenuAboutButton"
+        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarHelpMenuAboutButton.Text = "&About"
         '
         'aaformMainWindow
         '
@@ -95,23 +95,23 @@ Partial Class aaformMainWindow
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(409, 326)
         Me.Controls.Add(Me.StatusStrip1)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Controls.Add(Me.menubarMainWindow)
+        Me.MainMenuStrip = Me.menubarMainWindow
         Me.Name = "aaformMainWindow"
         Me.Text = "HTML Character Code Acquisition Program"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.menubarMainWindow.ResumeLayout(False)
+        Me.menubarMainWindow.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents menubarMainWindow As MenuStrip
+    Friend WithEvents menubarFileMenu As ToolStripMenuItem
+    Friend WithEvents menubarFileMenuExitButton As ToolStripMenuItem
+    Friend WithEvents menubarToolsMenu As ToolStripMenuItem
+    Friend WithEvents menubarToolsMenuOptionsButton As ToolStripMenuItem
+    Friend WithEvents menubarHelpMenu As ToolStripMenuItem
+    Friend WithEvents menubarHelpMenuAboutButton As ToolStripMenuItem
 End Class
