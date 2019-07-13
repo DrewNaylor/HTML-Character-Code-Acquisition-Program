@@ -95,9 +95,7 @@ Partial Class aaformMainWindow
         '
         'TextBox1
         '
-        Me.TextBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox1.Location = New System.Drawing.Point(3, 3)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(303, 20)
@@ -105,9 +103,7 @@ Partial Class aaformMainWindow
         '
         'Button1
         '
-        Me.Button1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button1.Location = New System.Drawing.Point(312, 3)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 22)
