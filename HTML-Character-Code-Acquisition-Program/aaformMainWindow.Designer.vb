@@ -22,7 +22,7 @@ Partial Class aaformMainWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.statusbarMainWindow = New System.Windows.Forms.StatusStrip()
         Me.menubarMainWindow = New System.Windows.Forms.MenuStrip()
         Me.menubarFileMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.menubarFileMenuExitButton = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,13 +33,12 @@ Partial Class aaformMainWindow
         Me.menubarMainWindow.SuspendLayout()
         Me.SuspendLayout()
         '
-        'StatusStrip1
+        'statusbarMainWindow
         '
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 304)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(409, 22)
-        Me.StatusStrip1.TabIndex = 0
-        Me.StatusStrip1.Text = "statusbarMainWindow"
+        Me.statusbarMainWindow.Location = New System.Drawing.Point(0, 304)
+        Me.statusbarMainWindow.Name = "statusbarMainWindow"
+        Me.statusbarMainWindow.Size = New System.Drawing.Size(409, 22)
+        Me.statusbarMainWindow.TabIndex = 0
         '
         'menubarMainWindow
         '
@@ -94,7 +93,7 @@ Partial Class aaformMainWindow
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(409, 326)
-        Me.Controls.Add(Me.StatusStrip1)
+        Me.Controls.Add(Me.statusbarMainWindow)
         Me.Controls.Add(Me.menubarMainWindow)
         Me.MainMenuStrip = Me.menubarMainWindow
         Me.Name = "aaformMainWindow"
@@ -106,7 +105,7 @@ Partial Class aaformMainWindow
 
     End Sub
 
-    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents statusbarMainWindow As StatusStrip
     Friend WithEvents menubarMainWindow As MenuStrip
     Friend WithEvents menubarFileMenu As ToolStripMenuItem
     Friend WithEvents menubarFileMenuExitButton As ToolStripMenuItem
