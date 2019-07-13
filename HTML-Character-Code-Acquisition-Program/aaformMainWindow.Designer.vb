@@ -33,6 +33,7 @@ Partial Class aaformMainWindow
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.menubarMainWindow.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -121,6 +122,7 @@ Partial Class aaformMainWindow
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.TextBox2, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 24)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -129,6 +131,16 @@ Partial Class aaformMainWindow
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(400, 280)
         Me.TableLayoutPanel1.TabIndex = 3
+        '
+        'TextBox2
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.TextBox2, 2)
+        Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox2.Location = New System.Drawing.Point(3, 31)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(394, 246)
+        Me.TextBox2.TabIndex = 2
         '
         'aaformMainWindow
         '
@@ -161,4 +173,5 @@ Partial Class aaformMainWindow
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents TextBox2 As TextBox
 End Class
