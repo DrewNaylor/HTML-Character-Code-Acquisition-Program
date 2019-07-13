@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("HTML-Character-Code-Acquisition-Program")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("HTML Character Code Acquisition Program")>
+<Assembly: AssemblyDescription("Developer tool to look up HTML character codes.")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("HTML-Character-Code-Acquisition-Program")>
-<Assembly: AssemblyCopyright("Copyright ©  2019")>
+<Assembly: AssemblyProduct("HTML Character Code Acquisition Program")>
+<Assembly: AssemblyCopyright("Copyright © 2019 Drew Naylor. Licensed under Gnu GPLv3+.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("0.1.0.0")>
+<Assembly: AssemblyFileVersion("0.1.0.0")>
