@@ -99,7 +99,7 @@ Partial Class aaformMainWindow
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(3, 3)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(293, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(303, 20)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
@@ -107,9 +107,9 @@ Partial Class aaformMainWindow
         Me.Button1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Location = New System.Drawing.Point(302, 3)
+        Me.Button1.Location = New System.Drawing.Point(312, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 22)
+        Me.Button1.Size = New System.Drawing.Size(85, 22)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -117,8 +117,8 @@ Partial Class aaformMainWindow
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.75!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.25!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TextBox1, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
