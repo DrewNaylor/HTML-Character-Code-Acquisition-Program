@@ -48,6 +48,27 @@ Some more features need to be added to this list from my OneNote notebook.
 
 To edit the code, simply open `HTML-Character-Code-Acquisition-Program.sln` in Visual Studio. Visual Studio 2015 Community is the version that's used, but other newer versions might work.
 
+## How to build it from source
+
+In addition to the requirements for simply running html-ccap, your computer requires the following software to build it from source code:
+
+- [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
+  - If [Visual Studio 2015 Community](https://www.visualstudio.com/vs/older-downloads/) is installed, Microsoft Build Tools 2015 is not required for building thumbsget.
+
+If you want to try the latest changes from the master branch, you can download the latest build's [artifacts from AppVeyor](https://ci.appveyor.com/project/DrewNaylor/html-character-code-acquisition-program/branch/master/artifacts). When the download has completed, extract the archive, then open the `Debug` folder. In this folder, double-click on `HTML-Character-Code-Acquisition-Program.exe`.
+
+***
+
+If you don't want to download from AppVeyor to build html-ccap, here's how to do it manually:
+
+1. First, clone the Git repository by running: <code>git clone https://github.com/DrewNaylor/HTML-Character-Code-Acquisition-Program.git</code> or [download the Zip file for the master branch](https://github.com/DrewNaylor/HTML-Character-Code-Acquisition-Program/archive/master.zip) and remember where you saved your files.
+
+2. Next, open the command prompt from the Start menu (`cmd.exe`) and type or copy/paste `cd C:\Program Files (x86)\MSBuild\14.0\Bin\` if you have a 64-bit Windows install or `cd C:\Program Files\MSBuild\14.0\Bin\` if you have a 32-bit Windows install. Press the Enter or Return key when it's pasted. Don't run `cmd.exe` from the Git Shell or else the next step won't work.
+
+3. Third, type `msbuild.exe`, press the spacebar, and drag the `HTML-Character-Code-Acquisition-Program.sln` into the command prompt window and press the Enter or Return key.
+
+4. And finally, once the project is done being built, you'll find the `HTML-Character-Code-Acquisition-Program.exe` file in `HTML-Character-Code-Acquisition-Program\HTML-Character-Code-Acquisition-Program\bin\Debug` wherever you saved the files to earlier along with a config file, a PDB file, and an XML file all named after html-ccap, as well as a file named `searchXml.xml` which is used to store the HTML character codes/character entities.
+
 ## System requirements
 
 To use this software, the following requirements must be met:
