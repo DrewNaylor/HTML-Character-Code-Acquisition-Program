@@ -40,17 +40,21 @@ Public Class aaformMainWindow
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Add a namespace to the namespace manager so that XML works properly.
         searchNamespaceManager.AddNamespace("html-ccap", "https://drewnaylor.github.io/xml")
+        Debug.WriteLine("XML file path:")
         Debug.WriteLine(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
         ' Load in the XML file with the character codes from the current directory.
         ' This would preferably also have an option to load it from the
         ' application's Resources, but the XML file isn't close enough
-        ' to completion for that to make sense.
+        ' to completion for that to make sense.        
         xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
+        Debug.WriteLine("XML file contents:")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
     End Sub
 
     Private Sub getCodes()
         'First we look at each XmlNode within the character code section node.
+
+        Debug.WriteLine("Entries in XML file:")
         For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
             Debug.WriteLine("node.InnerText: " & characterNode.InnerText)
             ' If it's determined that the text in the node contains the text in the textbox,

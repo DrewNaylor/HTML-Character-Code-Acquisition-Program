@@ -1,9 +1,14 @@
 <root>
 <version>1.0</version>
 	<characterCodeSection>
-		<characterCode>No-break space: _nbsp;</characterCode>
-		<characterCode>Non breaking space: _nbsp;</characterCode>
-		<characterCode>Euro: _euro;</characterCode>
+		<characterCode>Ampersand/and symbol: _amp;</characterCode>
 		<characterCode>Bullet: _bull;</characterCode>
+		<characterCode>Cent: _cent;</characterCode>
+		<characterCode>Copyright: _copy;</characterCode>
+		<characterCode>Euro: _euro;</characterCode>
+		<characterCode>Non-breaking space: _nbsp;</characterCode>
+		<characterCode>Pound: _pound;</characterCode>
+		<characterCode>Registered trademark: _reg;</characterCode>
+		<characterCode>Yen: _yen;</characterCode>
 	</characterCodeSection>
 </root>
