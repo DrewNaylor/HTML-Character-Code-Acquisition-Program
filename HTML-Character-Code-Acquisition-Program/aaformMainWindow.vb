@@ -24,13 +24,6 @@
 Imports System.Xml
 
 Public Class aaformMainWindow
-    Private Sub buttonSearch_Click(sender As Object, e As EventArgs) Handles buttonSearch.Click
-        ' Remove all text from the output textbox so it
-        ' doesn't get cluttered up, then get the character
-        ' codes.
-        textboxOutput.Clear()
-        getCodes()
-    End Sub
 
     ' The XML file we want to search.
     Private Shared xmlFileToSearch As XmlDocument = New XmlDocument()
@@ -49,6 +42,20 @@ Public Class aaformMainWindow
         xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
         Debug.WriteLine("XML file contents:")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
+    End Sub
+
+    Private Sub buttonSearch_Click(sender As Object, e As EventArgs) Handles buttonSearch.Click
+        ' Remove all text from the output textbox so it
+        ' doesn't get cluttered up, then get the character
+        ' codes.
+        textboxOutput.Clear()
+        getCodes()
+    End Sub
+
+    Private Sub textboxInput_TextChanged(sender As Object, e As EventArgs) Handles textboxInput.TextChanged
+        ' After a key is pressed, search the XML file if the user has
+        ' Search when Typing enabled.
+        buttonSearch.PerformClick()
     End Sub
 
     Private Sub getCodes()
@@ -72,9 +79,5 @@ Public Class aaformMainWindow
         textboxOutput.Text = textboxOutput.Text.TrimEnd
     End Sub
 
-    Private Sub textboxInput_TextChanged(sender As Object, e As EventArgs) Handles textboxInput.TextChanged
-        ' After a key is pressed, search the XML file if the user has
-        ' Search when Typing enabled.
-        buttonSearch.PerformClick()
-    End Sub
+
 End Class
