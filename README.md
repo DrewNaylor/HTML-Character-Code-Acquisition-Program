@@ -1,6 +1,9 @@
 # HTML-Character-Code-Acquisition-Program
 Developer tool to look up HTML character codes/HTML character entities.
 
+| Overall project status | Master branch status |
+|------------------------------------------------------------------------|----------------------------|
+| [![Project build status](https://ci.appveyor.com/api/projects/status/qekkf6yq173eybn4?svg=true)](https://ci.appveyor.com/project/DrewNaylor/html-character-code-acquisition-program) | [![Master branch Build status](https://ci.appveyor.com/api/projects/status/qekkf6yq173eybn4/branch/master?svg=true)](https://ci.appveyor.com/project/DrewNaylor/html-character-code-acquisition-program/branch/master) |
 
 Features to add:
 
