@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("HTML Character Code Acquisition Program")>
-<Assembly: AssemblyDescription("Developer tool to look up HTML character codes.")>
+<Assembly: AssemblyDescription("Developer tool to look up HTML character codes/HTML character entities.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("HTML Character Code Acquisition Program")>
 <Assembly: AssemblyCopyright("Copyright © 2019 Drew Naylor. Licensed under Gnu GPLv3+.")>
