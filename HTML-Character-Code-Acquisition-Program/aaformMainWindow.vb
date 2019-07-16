@@ -55,7 +55,9 @@ Public Class aaformMainWindow
     Private Sub textboxInput_TextChanged(sender As Object, e As EventArgs) Handles textboxInput.TextChanged
         ' After a key is pressed, search the XML file if the user has
         ' Search when Typing enabled.
-        buttonSearch.PerformClick()
+        If My.Settings.searchWhenTyping = True Then
+            buttonSearch.PerformClick()
+        End If
     End Sub
 
     Private Sub getCodes()
