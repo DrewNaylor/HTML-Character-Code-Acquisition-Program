@@ -81,7 +81,7 @@ Public Class aaformMainWindow
 
     Private Sub textboxInput_KeyDown(sender As Object, e As KeyEventArgs) Handles textboxInput.KeyDown
         ' When pressing Enter in the textbox, get the codes.
-        If e.KeyCode = Keys.Enter Then
+        If My.Settings.searchWhenTyping = False AndAlso e.KeyCode = Keys.Enter Then
             getCodes()
         End If
     End Sub
