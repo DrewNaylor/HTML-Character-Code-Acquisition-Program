@@ -31,6 +31,18 @@ Public Class aaformMainWindow
     Private Shared searchNamespaceManager As New XmlNamespaceManager(xmlFileToSearch.NameTable)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+#Region "Show or hide Search button."
+        ' Show Search button if the user wants to.
+        If My.Settings.showSearchButton = True Then
+            buttonSearch.Show()
+            tablelayoutpanelMainWindow.SetColumnSpan(textboxInput, 1)
+        Else
+            buttonSearch.Hide()
+            tablelayoutpanelMainWindow.SetColumnSpan(textboxInput, 2)
+        End If
+#End Region
+
+#Region "Load in XML file."
         ' Add a namespace to the namespace manager so that XML works properly.
         searchNamespaceManager.AddNamespace("html-ccap", "https://drewnaylor.github.io/xml")
         Debug.WriteLine("XML file path:")
@@ -42,6 +54,7 @@ Public Class aaformMainWindow
         xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
         Debug.WriteLine("XML file contents:")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
+#End Region
     End Sub
 
     Private Sub buttonSearch_Click(sender As Object, e As EventArgs) Handles buttonSearch.Click

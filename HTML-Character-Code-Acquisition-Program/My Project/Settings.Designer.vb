@@ -65,6 +65,18 @@ Namespace My
                 Me("searchWhenTyping") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property showSearchButton() As Boolean
+            Get
+                Return CType(Me("showSearchButton"),Boolean)
+            End Get
+            Set
+                Me("showSearchButton") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
