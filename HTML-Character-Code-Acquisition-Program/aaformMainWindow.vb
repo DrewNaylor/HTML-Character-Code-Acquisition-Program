@@ -63,7 +63,7 @@ Public Class aaformMainWindow
         textboxOutput.Clear()
         Debug.WriteLine("Entries in XML file:")
         For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
-            Debug.WriteLine("node.InnerText: " & characterNode.InnerText)
+            Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
             ' If it's determined that the text in the node contains the text in the textbox,
             ' then that is appended to the output textbox.
             ' To compare the text, both the text in the textbox and the text in the node
