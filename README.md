@@ -33,7 +33,7 @@ You should have received a copy of the GNU General Public License
 along with html-ccap.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
-Features to add:
+## Features to add
 
 - Search when typing (if the user wants it that way)
   - GUI configuration is needed, but this can be changed in the config file.
