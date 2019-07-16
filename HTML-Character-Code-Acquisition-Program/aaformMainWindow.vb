@@ -45,10 +45,7 @@ Public Class aaformMainWindow
     End Sub
 
     Private Sub buttonSearch_Click(sender As Object, e As EventArgs) Handles buttonSearch.Click
-        ' Remove all text from the output textbox so it
-        ' doesn't get cluttered up, then get the character
-        ' codes.
-        textboxOutput.Clear()
+        ' Get the character codes.
         getCodes()
     End Sub
 
@@ -56,13 +53,14 @@ Public Class aaformMainWindow
         ' After a key is pressed, search the XML file if the user has
         ' Search when Typing enabled.
         If My.Settings.searchWhenTyping = True Then
-            buttonSearch.PerformClick()
+            getCodes()
         End If
     End Sub
 
     Private Sub getCodes()
-        'First we look at each XmlNode within the character code section node.
-
+        'First we look at each XmlNode within the character code section node
+        ' after clearing the textbox.
+        textboxOutput.Clear()
         Debug.WriteLine("Entries in XML file:")
         For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
             Debug.WriteLine("node.InnerText: " & characterNode.InnerText)
