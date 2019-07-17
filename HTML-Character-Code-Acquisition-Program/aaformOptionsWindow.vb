@@ -29,6 +29,17 @@ Public Class aaformOptionsWindow
     End Sub
 
     Private Sub aaformOptionsWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Load in the user's settings.
+#Region "Search when typing/on Enter"
+        If My.Settings.searchWhenTyping = True Then
+            radiobuttonSearchWhenTyping.Checked = True
+        Else
+            radiobuttonSearchOnEnter.Checked = True
+        End If
+#End Region
 
+#Region "Show Search button"
+        checkboxShowSearchButton.Checked = My.Settings.showSearchButton
+#End Region
     End Sub
 End Class
