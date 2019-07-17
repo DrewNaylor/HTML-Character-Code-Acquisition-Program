@@ -22,52 +22,52 @@ Partial Class aaformOptionsWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.tablelayoutpanelOptionsWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.buttonSave = New System.Windows.Forms.Button()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonRestoreDefaults = New System.Windows.Forms.Button()
         Me.groupboxWhenToSearch = New System.Windows.Forms.GroupBox()
         Me.groupboxXmlUpdates = New System.Windows.Forms.GroupBox()
         Me.groupboxView = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.radiobuttonSearchOnEnter = New System.Windows.Forms.RadioButton()
+        Me.radiobuttonSearchWhenTyping = New System.Windows.Forms.RadioButton()
         Me.labelSearchAlwaysAvailableIfButtonShown = New System.Windows.Forms.Label()
         Me.labelCurrentXmlVersion = New System.Windows.Forms.Label()
         Me.buttonCheckForXmlUpdates = New System.Windows.Forms.Button()
         Me.linklabelXmlVersionAvailable = New System.Windows.Forms.LinkLabel()
         Me.checkboxShowSearchButton = New System.Windows.Forms.CheckBox()
         Me.checkboxAlwaysOnTop = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.checkboxSaveWindowSizeAndPosition = New System.Windows.Forms.CheckBox()
         Me.buttonResetMainWindowSizeAndPosition = New System.Windows.Forms.Button()
-        Me.TableLayoutPanel1.SuspendLayout()
+        Me.tablelayoutpanelOptionsWindow.SuspendLayout()
         Me.groupboxWhenToSearch.SuspendLayout()
         Me.groupboxXmlUpdates.SuspendLayout()
         Me.groupboxView.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TableLayoutPanel1
+        'tablelayoutpanelOptionsWindow
         '
-        Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.groupboxView, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.groupboxXmlUpdates, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonSave, 3, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonCancel, 2, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonRestoreDefaults, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.groupboxWhenToSearch, 0, 0)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 91.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(315, 344)
-        Me.TableLayoutPanel1.TabIndex = 0
+        Me.tablelayoutpanelOptionsWindow.ColumnCount = 4
+        Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
+        Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
+        Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxView, 0, 2)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxXmlUpdates, 0, 1)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonSave, 3, 3)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonCancel, 2, 3)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonRestoreDefaults, 0, 3)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxWhenToSearch, 0, 0)
+        Me.tablelayoutpanelOptionsWindow.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tablelayoutpanelOptionsWindow.Location = New System.Drawing.Point(0, 0)
+        Me.tablelayoutpanelOptionsWindow.Name = "tablelayoutpanelOptionsWindow"
+        Me.tablelayoutpanelOptionsWindow.RowCount = 4
+        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89.0!))
+        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 91.0!))
+        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.tablelayoutpanelOptionsWindow.Size = New System.Drawing.Size(315, 344)
+        Me.tablelayoutpanelOptionsWindow.TabIndex = 0
         '
         'buttonSave
         '
@@ -101,10 +101,10 @@ Partial Class aaformOptionsWindow
         '
         'groupboxWhenToSearch
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxWhenToSearch, 4)
+        Me.tablelayoutpanelOptionsWindow.SetColumnSpan(Me.groupboxWhenToSearch, 4)
         Me.groupboxWhenToSearch.Controls.Add(Me.labelSearchAlwaysAvailableIfButtonShown)
-        Me.groupboxWhenToSearch.Controls.Add(Me.RadioButton2)
-        Me.groupboxWhenToSearch.Controls.Add(Me.RadioButton1)
+        Me.groupboxWhenToSearch.Controls.Add(Me.radiobuttonSearchWhenTyping)
+        Me.groupboxWhenToSearch.Controls.Add(Me.radiobuttonSearchOnEnter)
         Me.groupboxWhenToSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxWhenToSearch.Location = New System.Drawing.Point(3, 3)
         Me.groupboxWhenToSearch.Name = "groupboxWhenToSearch"
@@ -115,7 +115,7 @@ Partial Class aaformOptionsWindow
         '
         'groupboxXmlUpdates
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxXmlUpdates, 4)
+        Me.tablelayoutpanelOptionsWindow.SetColumnSpan(Me.groupboxXmlUpdates, 4)
         Me.groupboxXmlUpdates.Controls.Add(Me.linklabelXmlVersionAvailable)
         Me.groupboxXmlUpdates.Controls.Add(Me.buttonCheckForXmlUpdates)
         Me.groupboxXmlUpdates.Controls.Add(Me.labelCurrentXmlVersion)
@@ -129,9 +129,9 @@ Partial Class aaformOptionsWindow
         '
         'groupboxView
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxView, 4)
+        Me.tablelayoutpanelOptionsWindow.SetColumnSpan(Me.groupboxView, 4)
         Me.groupboxView.Controls.Add(Me.buttonResetMainWindowSizeAndPosition)
-        Me.groupboxView.Controls.Add(Me.CheckBox1)
+        Me.groupboxView.Controls.Add(Me.checkboxSaveWindowSizeAndPosition)
         Me.groupboxView.Controls.Add(Me.checkboxAlwaysOnTop)
         Me.groupboxView.Controls.Add(Me.checkboxShowSearchButton)
         Me.groupboxView.Dock = System.Windows.Forms.DockStyle.Fill
@@ -142,27 +142,27 @@ Partial Class aaformOptionsWindow
         Me.groupboxView.TabStop = False
         Me.groupboxView.Text = "View"
         '
-        'RadioButton1
+        'radiobuttonSearchOnEnter
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(7, 20)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(102, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Search on Enter"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radiobuttonSearchOnEnter.AutoSize = True
+        Me.radiobuttonSearchOnEnter.Location = New System.Drawing.Point(7, 20)
+        Me.radiobuttonSearchOnEnter.Name = "radiobuttonSearchOnEnter"
+        Me.radiobuttonSearchOnEnter.Size = New System.Drawing.Size(102, 17)
+        Me.radiobuttonSearchOnEnter.TabIndex = 0
+        Me.radiobuttonSearchOnEnter.TabStop = True
+        Me.radiobuttonSearchOnEnter.Text = "Search on Enter"
+        Me.radiobuttonSearchOnEnter.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radiobuttonSearchWhenTyping
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(6, 43)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(119, 17)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Search when typing"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radiobuttonSearchWhenTyping.AutoSize = True
+        Me.radiobuttonSearchWhenTyping.Location = New System.Drawing.Point(6, 43)
+        Me.radiobuttonSearchWhenTyping.Name = "radiobuttonSearchWhenTyping"
+        Me.radiobuttonSearchWhenTyping.Size = New System.Drawing.Size(119, 17)
+        Me.radiobuttonSearchWhenTyping.TabIndex = 1
+        Me.radiobuttonSearchWhenTyping.TabStop = True
+        Me.radiobuttonSearchWhenTyping.Text = "Search when typing"
+        Me.radiobuttonSearchWhenTyping.UseVisualStyleBackColor = True
         '
         'labelSearchAlwaysAvailableIfButtonShown
         '
@@ -221,15 +221,15 @@ Partial Class aaformOptionsWindow
         Me.checkboxAlwaysOnTop.Text = "Make main window always on top"
         Me.checkboxAlwaysOnTop.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'checkboxSaveWindowSizeAndPosition
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(6, 68)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(230, 17)
-        Me.CheckBox1.TabIndex = 2
-        Me.CheckBox1.Text = "Save main window size and position on exit"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.checkboxSaveWindowSizeAndPosition.AutoSize = True
+        Me.checkboxSaveWindowSizeAndPosition.Location = New System.Drawing.Point(6, 68)
+        Me.checkboxSaveWindowSizeAndPosition.Name = "checkboxSaveWindowSizeAndPosition"
+        Me.checkboxSaveWindowSizeAndPosition.Size = New System.Drawing.Size(230, 17)
+        Me.checkboxSaveWindowSizeAndPosition.TabIndex = 2
+        Me.checkboxSaveWindowSizeAndPosition.Text = "Save main window size and position on exit"
+        Me.checkboxSaveWindowSizeAndPosition.UseVisualStyleBackColor = True
         '
         'buttonResetMainWindowSizeAndPosition
         '
@@ -245,15 +245,16 @@ Partial Class aaformOptionsWindow
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(315, 344)
-        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.tablelayoutpanelOptionsWindow)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "aaformOptionsWindow"
+        Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
-        Me.Text = "aaformOptionsWindow"
-        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.Text = "Options"
+        Me.tablelayoutpanelOptionsWindow.ResumeLayout(False)
         Me.groupboxWhenToSearch.ResumeLayout(False)
         Me.groupboxWhenToSearch.PerformLayout()
         Me.groupboxXmlUpdates.ResumeLayout(False)
@@ -264,21 +265,21 @@ Partial Class aaformOptionsWindow
 
     End Sub
 
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents tablelayoutpanelOptionsWindow As TableLayoutPanel
     Friend WithEvents buttonSave As Button
     Friend WithEvents buttonCancel As Button
     Friend WithEvents buttonRestoreDefaults As Button
     Friend WithEvents groupboxWhenToSearch As GroupBox
     Friend WithEvents groupboxView As GroupBox
     Friend WithEvents groupboxXmlUpdates As GroupBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents radiobuttonSearchWhenTyping As RadioButton
+    Friend WithEvents radiobuttonSearchOnEnter As RadioButton
     Friend WithEvents labelSearchAlwaysAvailableIfButtonShown As Label
     Friend WithEvents labelCurrentXmlVersion As Label
     Friend WithEvents linklabelXmlVersionAvailable As LinkLabel
     Friend WithEvents buttonCheckForXmlUpdates As Button
     Friend WithEvents checkboxShowSearchButton As CheckBox
     Friend WithEvents checkboxAlwaysOnTop As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents checkboxSaveWindowSizeAndPosition As CheckBox
     Friend WithEvents buttonResetMainWindowSizeAndPosition As Button
 End Class

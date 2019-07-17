@@ -100,6 +100,7 @@ Public Class aaformMainWindow
     End Sub
 
     Private Sub menubarToolsMenuOptionsButton_Click(sender As Object, e As EventArgs) Handles menubarToolsMenuOptionsButton.Click
-        aaformOptionsWindow.Show()
+        ' Show the Options window.
+        aaformOptionsWindow.ShowDialog(Me)
     End Sub
 End Class

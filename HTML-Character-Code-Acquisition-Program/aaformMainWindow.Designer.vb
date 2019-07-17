@@ -77,8 +77,8 @@ Partial Class aaformMainWindow
         'menubarToolsMenuOptionsButton
         '
         Me.menubarToolsMenuOptionsButton.Name = "menubarToolsMenuOptionsButton"
-        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(116, 22)
-        Me.menubarToolsMenuOptionsButton.Text = "&Options"
+        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarToolsMenuOptionsButton.Text = "&Options..."
         '
         'menubarHelpMenu
         '
@@ -90,8 +90,8 @@ Partial Class aaformMainWindow
         'menubarHelpMenuAboutButton
         '
         Me.menubarHelpMenuAboutButton.Name = "menubarHelpMenuAboutButton"
-        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(107, 22)
-        Me.menubarHelpMenuAboutButton.Text = "&About"
+        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarHelpMenuAboutButton.Text = "&About..."
         '
         'textboxInput
         '
