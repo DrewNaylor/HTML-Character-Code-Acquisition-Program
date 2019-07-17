@@ -23,7 +23,9 @@
 
 Public Class aaformOptionsWindow
     Private Sub buttonCancel_Click(sender As Object, e As EventArgs) Handles buttonCancel.Click
-
+        ' Cancel out of the Options window and reload the user's settings
+        My.Settings.Reload()
+        Me.Close()
     End Sub
 
     Private Sub aaformOptionsWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
