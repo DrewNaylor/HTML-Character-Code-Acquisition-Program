@@ -26,10 +26,14 @@ Partial Class aaformOptionsWindow
         Me.buttonSave = New System.Windows.Forms.Button()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonRestoreDefaults = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.groupboxWhenToSearch = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
+        Me.groupboxWhenToSearch.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -44,7 +48,7 @@ Partial Class aaformOptionsWindow
         Me.TableLayoutPanel1.Controls.Add(Me.buttonSave, 3, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonCancel, 2, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonRestoreDefaults, 0, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.groupboxWhenToSearch, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -86,16 +90,19 @@ Partial Class aaformOptionsWindow
         Me.buttonRestoreDefaults.Text = "Defaults"
         Me.buttonRestoreDefaults.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'groupboxWhenToSearch
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.GroupBox1, 4)
-        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(309, 90)
-        Me.GroupBox1.TabIndex = 3
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxWhenToSearch, 4)
+        Me.groupboxWhenToSearch.Controls.Add(Me.Label1)
+        Me.groupboxWhenToSearch.Controls.Add(Me.RadioButton2)
+        Me.groupboxWhenToSearch.Controls.Add(Me.RadioButton1)
+        Me.groupboxWhenToSearch.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.groupboxWhenToSearch.Location = New System.Drawing.Point(3, 3)
+        Me.groupboxWhenToSearch.Name = "groupboxWhenToSearch"
+        Me.groupboxWhenToSearch.Size = New System.Drawing.Size(309, 90)
+        Me.groupboxWhenToSearch.TabIndex = 3
+        Me.groupboxWhenToSearch.TabStop = False
+        Me.groupboxWhenToSearch.Text = "When to search"
         '
         'GroupBox2
         '
@@ -119,6 +126,37 @@ Partial Class aaformOptionsWindow
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "GroupBox3"
         '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(7, 20)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(102, 17)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Search on Enter"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(6, 43)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(119, 17)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Search when typing"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(4, 63)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(262, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "You can always search by clicking ""Search"" if shown."
+        '
         'aaformOptionsWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -133,6 +171,8 @@ Partial Class aaformOptionsWindow
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "aaformOptionsWindow"
         Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.groupboxWhenToSearch.ResumeLayout(False)
+        Me.groupboxWhenToSearch.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -141,7 +181,10 @@ Partial Class aaformOptionsWindow
     Friend WithEvents buttonSave As Button
     Friend WithEvents buttonCancel As Button
     Friend WithEvents buttonRestoreDefaults As Button
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents groupboxWhenToSearch As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents Label1 As Label
 End Class
