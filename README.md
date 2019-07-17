@@ -46,6 +46,7 @@ along with html-ccap.  If not, see <http://www.gnu.org/licenses/>.
   - Search button is hidden when `My.Settings.showSearchButton` is set to `False`.
 - Updating the XML file from the Options window.
 - Functionality for the menubar items, like File\Exit, Tools\Options, and Help\About.
+- The Options window looks mostly finished visually, but code needs to be added so it's functional.
 
 Some more features need to be added to this list from my OneNote notebook.
 
