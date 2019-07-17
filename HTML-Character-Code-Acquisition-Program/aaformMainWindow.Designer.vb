@@ -77,7 +77,7 @@ Partial Class aaformMainWindow
         'menubarToolsMenuOptionsButton
         '
         Me.menubarToolsMenuOptionsButton.Name = "menubarToolsMenuOptionsButton"
-        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(116, 22)
+        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(152, 22)
         Me.menubarToolsMenuOptionsButton.Text = "&Options"
         '
         'menubarHelpMenu

@@ -33,9 +33,9 @@ Partial Class aaformOptionsWindow
         '
         Me.TableLayoutPanel1.ColumnCount = 4
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.buttonSave, 3, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonCancel, 2, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonRestoreDefaults, 0, 1)
@@ -51,9 +51,9 @@ Partial Class aaformOptionsWindow
         'buttonSave
         '
         Me.buttonSave.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.buttonSave.Location = New System.Drawing.Point(247, 315)
+        Me.buttonSave.Location = New System.Drawing.Point(245, 315)
         Me.buttonSave.Name = "buttonSave"
-        Me.buttonSave.Size = New System.Drawing.Size(65, 26)
+        Me.buttonSave.Size = New System.Drawing.Size(67, 26)
         Me.buttonSave.TabIndex = 0
         Me.buttonSave.Text = "Save"
         Me.buttonSave.UseVisualStyleBackColor = True
@@ -61,7 +61,7 @@ Partial Class aaformOptionsWindow
         'buttonCancel
         '
         Me.buttonCancel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.buttonCancel.Location = New System.Drawing.Point(174, 315)
+        Me.buttonCancel.Location = New System.Drawing.Point(172, 315)
         Me.buttonCancel.Name = "buttonCancel"
         Me.buttonCancel.Size = New System.Drawing.Size(67, 26)
         Me.buttonCancel.TabIndex = 1
@@ -84,7 +84,12 @@ Partial Class aaformOptionsWindow
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(315, 344)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "aaformOptionsWindow"
+        Me.ShowInTaskbar = False
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "aaformOptionsWindow"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)

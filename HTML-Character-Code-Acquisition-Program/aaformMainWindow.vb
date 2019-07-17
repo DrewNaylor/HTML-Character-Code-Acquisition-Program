@@ -98,4 +98,8 @@ Public Class aaformMainWindow
             getCodes()
         End If
     End Sub
+
+    Private Sub menubarToolsMenuOptionsButton_Click(sender As Object, e As EventArgs) Handles menubarToolsMenuOptionsButton.Click
+        aaformOptionsWindow.Show()
+    End Sub
 End Class
