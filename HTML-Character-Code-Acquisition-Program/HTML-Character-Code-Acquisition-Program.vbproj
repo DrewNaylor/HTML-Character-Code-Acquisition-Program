@@ -105,6 +105,12 @@
       <DependentUpon>aaformMainWindow.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="aaformOptionsWindow.Designer.vb">
+      <DependentUpon>aaformOptionsWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aaformOptionsWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,6 +130,9 @@
   <ItemGroup>
     <EmbeddedResource Include="aaformMainWindow.resx">
       <DependentUpon>aaformMainWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aaformOptionsWindow.resx">
+      <DependentUpon>aaformOptionsWindow.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
