@@ -31,10 +31,10 @@ Partial Class aaformOptionsWindow
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.linklabelVersionAvailable = New System.Windows.Forms.LinkLabel()
+        Me.labelSearchAlwaysAvailableIfButtonShown = New System.Windows.Forms.Label()
+        Me.labelCurrentXmlVersion = New System.Windows.Forms.Label()
+        Me.buttonCheckForXmlUpdates = New System.Windows.Forms.Button()
+        Me.linklabelXmlVersionAvailable = New System.Windows.Forms.LinkLabel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.groupboxWhenToSearch.SuspendLayout()
         Me.groupboxXmlUpdates.SuspendLayout()
@@ -97,7 +97,7 @@ Partial Class aaformOptionsWindow
         'groupboxWhenToSearch
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxWhenToSearch, 4)
-        Me.groupboxWhenToSearch.Controls.Add(Me.Label1)
+        Me.groupboxWhenToSearch.Controls.Add(Me.labelSearchAlwaysAvailableIfButtonShown)
         Me.groupboxWhenToSearch.Controls.Add(Me.RadioButton2)
         Me.groupboxWhenToSearch.Controls.Add(Me.RadioButton1)
         Me.groupboxWhenToSearch.Dock = System.Windows.Forms.DockStyle.Fill
@@ -111,9 +111,9 @@ Partial Class aaformOptionsWindow
         'groupboxXmlUpdates
         '
         Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxXmlUpdates, 4)
-        Me.groupboxXmlUpdates.Controls.Add(Me.linklabelVersionAvailable)
-        Me.groupboxXmlUpdates.Controls.Add(Me.Button1)
-        Me.groupboxXmlUpdates.Controls.Add(Me.Label2)
+        Me.groupboxXmlUpdates.Controls.Add(Me.linklabelXmlVersionAvailable)
+        Me.groupboxXmlUpdates.Controls.Add(Me.buttonCheckForXmlUpdates)
+        Me.groupboxXmlUpdates.Controls.Add(Me.labelCurrentXmlVersion)
         Me.groupboxXmlUpdates.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxXmlUpdates.Location = New System.Drawing.Point(3, 99)
         Me.groupboxXmlUpdates.Name = "groupboxXmlUpdates"
@@ -155,42 +155,42 @@ Partial Class aaformOptionsWindow
         Me.RadioButton2.Text = "Search when typing"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
-        'Label1
+        'labelSearchAlwaysAvailableIfButtonShown
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 63)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(262, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "You can always search by clicking ""Search"" if shown."
+        Me.labelSearchAlwaysAvailableIfButtonShown.AutoSize = True
+        Me.labelSearchAlwaysAvailableIfButtonShown.Location = New System.Drawing.Point(4, 63)
+        Me.labelSearchAlwaysAvailableIfButtonShown.Name = "labelSearchAlwaysAvailableIfButtonShown"
+        Me.labelSearchAlwaysAvailableIfButtonShown.Size = New System.Drawing.Size(262, 13)
+        Me.labelSearchAlwaysAvailableIfButtonShown.TabIndex = 2
+        Me.labelSearchAlwaysAvailableIfButtonShown.Text = "You can always search by clicking ""Search"" if shown."
         '
-        'Label2
+        'labelCurrentXmlVersion
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(4, 16)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(190, 13)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Current XML file version: (number here)"
+        Me.labelCurrentXmlVersion.AutoSize = True
+        Me.labelCurrentXmlVersion.Location = New System.Drawing.Point(4, 16)
+        Me.labelCurrentXmlVersion.Name = "labelCurrentXmlVersion"
+        Me.labelCurrentXmlVersion.Size = New System.Drawing.Size(190, 13)
+        Me.labelCurrentXmlVersion.TabIndex = 0
+        Me.labelCurrentXmlVersion.Text = "Current XML file version: (number here)"
         '
-        'Button1
+        'buttonCheckForXmlUpdates
         '
-        Me.Button1.Location = New System.Drawing.Point(228, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.buttonCheckForXmlUpdates.Location = New System.Drawing.Point(6, 50)
+        Me.buttonCheckForXmlUpdates.Name = "buttonCheckForXmlUpdates"
+        Me.buttonCheckForXmlUpdates.Size = New System.Drawing.Size(116, 23)
+        Me.buttonCheckForXmlUpdates.TabIndex = 1
+        Me.buttonCheckForXmlUpdates.Text = "Check for updates"
+        Me.buttonCheckForXmlUpdates.UseVisualStyleBackColor = True
         '
-        'linklabelVersionAvailable
+        'linklabelXmlVersionAvailable
         '
-        Me.linklabelVersionAvailable.AutoSize = True
-        Me.linklabelVersionAvailable.Location = New System.Drawing.Point(4, 34)
-        Me.linklabelVersionAvailable.Name = "linklabelVersionAvailable"
-        Me.linklabelVersionAvailable.Size = New System.Drawing.Size(220, 13)
-        Me.linklabelVersionAvailable.TabIndex = 2
-        Me.linklabelVersionAvailable.TabStop = True
-        Me.linklabelVersionAvailable.Text = "Version available online: (newer version here)"
+        Me.linklabelXmlVersionAvailable.AutoSize = True
+        Me.linklabelXmlVersionAvailable.Location = New System.Drawing.Point(4, 34)
+        Me.linklabelXmlVersionAvailable.Name = "linklabelXmlVersionAvailable"
+        Me.linklabelXmlVersionAvailable.Size = New System.Drawing.Size(220, 13)
+        Me.linklabelXmlVersionAvailable.TabIndex = 2
+        Me.linklabelXmlVersionAvailable.TabStop = True
+        Me.linklabelXmlVersionAvailable.Text = "Version available online: (newer version here)"
         '
         'aaformOptionsWindow
         '
@@ -223,8 +223,8 @@ Partial Class aaformOptionsWindow
     Friend WithEvents groupboxXmlUpdates As GroupBox
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents linklabelVersionAvailable As LinkLabel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents labelSearchAlwaysAvailableIfButtonShown As Label
+    Friend WithEvents labelCurrentXmlVersion As Label
+    Friend WithEvents linklabelXmlVersionAvailable As LinkLabel
+    Friend WithEvents buttonCheckForXmlUpdates As Button
 End Class
