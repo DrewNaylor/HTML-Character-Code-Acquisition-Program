@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
         Public Property searchWhenTyping() As Boolean
             Get
                 Return CType(Me("searchWhenTyping"),Boolean)
@@ -68,13 +68,61 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
         Public Property showSearchButton() As Boolean
             Get
                 Return CType(Me("showSearchButton"),Boolean)
             End Get
             Set
                 Me("showSearchButton") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property alwaysOnTop() As Boolean
+            Get
+                Return CType(Me("alwaysOnTop"),Boolean)
+            End Get
+            Set
+                Me("alwaysOnTop") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property saveSizeAndPositionOnExit() As Boolean
+            Get
+                Return CType(Me("saveSizeAndPositionOnExit"),Boolean)
+            End Get
+            Set
+                Me("saveSizeAndPositionOnExit") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0, 0")>  _
+        Public Property mainWindowSize() As Global.System.Drawing.Size
+            Get
+                Return CType(Me("mainWindowSize"),Global.System.Drawing.Size)
+            End Get
+            Set
+                Me("mainWindowSize") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0, 0")>  _
+        Public Property mainWindowPosition() As Global.System.Drawing.Point
+            Get
+                Return CType(Me("mainWindowPosition"),Global.System.Drawing.Point)
+            End Get
+            Set
+                Me("mainWindowPosition") = value
             End Set
         End Property
     End Class
