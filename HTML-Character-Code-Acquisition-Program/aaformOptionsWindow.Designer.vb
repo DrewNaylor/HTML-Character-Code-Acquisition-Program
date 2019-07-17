@@ -26,6 +26,9 @@ Partial Class aaformOptionsWindow
         Me.buttonSave = New System.Windows.Forms.Button()
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonRestoreDefaults = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -36,13 +39,18 @@ Partial Class aaformOptionsWindow
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonSave, 3, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonCancel, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.buttonRestoreDefaults, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox3, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.buttonSave, 3, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.buttonCancel, 2, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.buttonRestoreDefaults, 0, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox1, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowCount = 4
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 96.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(315, 344)
@@ -78,6 +86,39 @@ Partial Class aaformOptionsWindow
         Me.buttonRestoreDefaults.Text = "Defaults"
         Me.buttonRestoreDefaults.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.GroupBox1, 4)
+        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(309, 90)
+        Me.GroupBox1.TabIndex = 3
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "GroupBox1"
+        '
+        'GroupBox2
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.GroupBox2, 4)
+        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox2.Location = New System.Drawing.Point(3, 99)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(309, 99)
+        Me.GroupBox2.TabIndex = 4
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "GroupBox2"
+        '
+        'GroupBox3
+        '
+        Me.TableLayoutPanel1.SetColumnSpan(Me.GroupBox3, 4)
+        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox3.Location = New System.Drawing.Point(3, 204)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(309, 105)
+        Me.GroupBox3.TabIndex = 5
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "GroupBox3"
+        '
         'aaformOptionsWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -100,4 +141,7 @@ Partial Class aaformOptionsWindow
     Friend WithEvents buttonSave As Button
     Friend WithEvents buttonCancel As Button
     Friend WithEvents buttonRestoreDefaults As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents GroupBox2 As GroupBox
 End Class
