@@ -27,13 +27,17 @@ Partial Class aaformOptionsWindow
         Me.buttonCancel = New System.Windows.Forms.Button()
         Me.buttonRestoreDefaults = New System.Windows.Forms.Button()
         Me.groupboxWhenToSearch = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.groupboxXmlUpdates = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.linklabelVersionAvailable = New System.Windows.Forms.LinkLabel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.groupboxWhenToSearch.SuspendLayout()
+        Me.groupboxXmlUpdates.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -44,7 +48,7 @@ Partial Class aaformOptionsWindow
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.GroupBox3, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.GroupBox2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.groupboxXmlUpdates, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonSave, 3, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonCancel, 2, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.buttonRestoreDefaults, 0, 3)
@@ -104,16 +108,19 @@ Partial Class aaformOptionsWindow
         Me.groupboxWhenToSearch.TabStop = False
         Me.groupboxWhenToSearch.Text = "When to search"
         '
-        'GroupBox2
+        'groupboxXmlUpdates
         '
-        Me.TableLayoutPanel1.SetColumnSpan(Me.GroupBox2, 4)
-        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox2.Location = New System.Drawing.Point(3, 99)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(309, 99)
-        Me.GroupBox2.TabIndex = 4
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        Me.TableLayoutPanel1.SetColumnSpan(Me.groupboxXmlUpdates, 4)
+        Me.groupboxXmlUpdates.Controls.Add(Me.linklabelVersionAvailable)
+        Me.groupboxXmlUpdates.Controls.Add(Me.Button1)
+        Me.groupboxXmlUpdates.Controls.Add(Me.Label2)
+        Me.groupboxXmlUpdates.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.groupboxXmlUpdates.Location = New System.Drawing.Point(3, 99)
+        Me.groupboxXmlUpdates.Name = "groupboxXmlUpdates"
+        Me.groupboxXmlUpdates.Size = New System.Drawing.Size(309, 99)
+        Me.groupboxXmlUpdates.TabIndex = 4
+        Me.groupboxXmlUpdates.TabStop = False
+        Me.groupboxXmlUpdates.Text = "XML file updates"
         '
         'GroupBox3
         '
@@ -157,6 +164,34 @@ Partial Class aaformOptionsWindow
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "You can always search by clicking ""Search"" if shown."
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(4, 16)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(190, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Current XML file version: (number here)"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(228, 29)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'linklabelVersionAvailable
+        '
+        Me.linklabelVersionAvailable.AutoSize = True
+        Me.linklabelVersionAvailable.Location = New System.Drawing.Point(4, 34)
+        Me.linklabelVersionAvailable.Name = "linklabelVersionAvailable"
+        Me.linklabelVersionAvailable.Size = New System.Drawing.Size(220, 13)
+        Me.linklabelVersionAvailable.TabIndex = 2
+        Me.linklabelVersionAvailable.TabStop = True
+        Me.linklabelVersionAvailable.Text = "Version available online: (newer version here)"
+        '
         'aaformOptionsWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -173,6 +208,8 @@ Partial Class aaformOptionsWindow
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.groupboxWhenToSearch.ResumeLayout(False)
         Me.groupboxWhenToSearch.PerformLayout()
+        Me.groupboxXmlUpdates.ResumeLayout(False)
+        Me.groupboxXmlUpdates.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -183,8 +220,11 @@ Partial Class aaformOptionsWindow
     Friend WithEvents buttonRestoreDefaults As Button
     Friend WithEvents groupboxWhenToSearch As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents groupboxXmlUpdates As GroupBox
     Friend WithEvents RadioButton2 As RadioButton
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents linklabelVersionAvailable As LinkLabel
+    Friend WithEvents Button1 As Button
 End Class
