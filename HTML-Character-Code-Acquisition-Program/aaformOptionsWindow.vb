@@ -42,4 +42,23 @@ Public Class aaformOptionsWindow
         checkboxShowSearchButton.Checked = My.Settings.showSearchButton
 #End Region
     End Sub
+
+#Region "Save button."
+    Private Sub buttonSave_Click(sender As Object, e As EventArgs) Handles buttonSave.Click
+        ' This is what happens when saving settings.
+
+        ' First, if the radio button to search on Enter is checked,
+        ' set the option to search when typing to False.
+        If radiobuttonSearchOnEnter.Checked = True Then
+            My.Settings.searchWhenTyping = False
+        Else
+            ' Otherwise, set it to True.
+            My.Settings.searchWhenTyping = True
+        End If
+
+        My.Settings.Save()
+        My.Settings.Reload()
+        Me.Close()
+    End Sub
+#End Region
 End Class
