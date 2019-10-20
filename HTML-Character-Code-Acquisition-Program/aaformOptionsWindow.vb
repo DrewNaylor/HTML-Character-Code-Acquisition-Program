@@ -56,6 +56,8 @@ Public Class aaformOptionsWindow
             My.Settings.searchWhenTyping = True
         End If
 
+
+        ' Now save the settings and reload them before closing the window.
         My.Settings.Save()
         My.Settings.Reload()
         Me.Close()

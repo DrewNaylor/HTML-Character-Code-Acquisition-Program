@@ -71,25 +71,33 @@ Public Class aaformMainWindow
     End Sub
 
     Private Sub getCodes()
-        'First we look at each XmlNode within the character code section node
+        ' First we look at each XmlNode within the character code section node
         ' after clearing the textbox.
-        textboxOutput.Clear()
-        Debug.WriteLine("Entries in XML file:")
-        For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
-            Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
-            ' If it's determined that the text in the node contains the text in the textbox,
-            ' then that is appended to the output textbox.
-            ' To compare the text, both the text in the textbox and the text in the node
-            ' are made to be lowercase and culture/language-invariant.
-            If characterNode.InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
-                ' Underscores are replaced with and symbols so that they match how HTML expects
-                ' character codes to look. The underscores are necessary for now as XML complains
-                ' when they're in the file, so this is a workaround.
-                textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
-            End If
-        Next
-        ' Now trim the end.
-        textboxOutput.Text = textboxOutput.Text.TrimEnd
+
+        ' Also make sure the input textbox isn't empty.
+        If Not textboxInput.Text = "" Then
+            textboxOutput.Clear()
+            Debug.WriteLine("Entries in XML file:")
+            For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
+                Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
+                ' If it's determined that the text in the node contains the text in the textbox,
+                ' then that is appended to the output textbox.
+                ' To compare the text, both the text in the textbox and the text in the node
+                ' are made to be lowercase and culture/language-invariant.
+                If characterNode.InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
+                    ' Underscores are replaced with and symbols so that they match how HTML expects
+                    ' character codes to look. The underscores are necessary for now as XML complains
+                    ' when they're in the file, so this is a workaround.
+                    textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
+                End If
+            Next
+            ' Now trim the end.
+            textboxOutput.Text = textboxOutput.Text.TrimEnd
+
+        Else
+            ' If the textbox is empty, then clear the output textbox.
+            textboxOutput.Clear()
+        End If
     End Sub
 
     Private Sub textboxInput_KeyDown(sender As Object, e As KeyEventArgs) Handles textboxInput.KeyDown
