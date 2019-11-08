@@ -117,4 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DefaultTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Eyesore2Theme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eyesore2Theme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EyesoreTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EyesoreTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MaudernClassicTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaudernClassicTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MaudernTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaudernTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MittyTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MittyTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ReturnOfNightTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReturnOfNightTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RGBTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RGBTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TenDarkTheme_XML" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TenDarkTheme_XML.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

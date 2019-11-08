@@ -73,6 +73,9 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PortableUXLLauncher_ThemeEngine">
+      <HintPath>..\..\UXL-Launcher\PortableUXLLauncher_ThemeEngine\bin\Debug\PortableUXLLauncher_ThemeEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -165,6 +168,33 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eyesore2Theme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyesoreTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaudernClassicTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MaudernTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MittyTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReturnOfNightTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RGBTheme_XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TenDarkTheme_XML.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <PropertyGroup>

@@ -22,6 +22,7 @@
 
 
 Imports System.Xml
+Imports PortableUXLLauncher_ThemeEngine
 
 Public Class aaformMainWindow
 
@@ -110,5 +111,11 @@ Public Class aaformMainWindow
     Private Sub menubarToolsMenuOptionsButton_Click(sender As Object, e As EventArgs) Handles menubarToolsMenuOptionsButton.Click
         ' Show the Options window.
         aaformOptionsWindow.ShowDialog(Me)
+    End Sub
+
+    Private Sub ApplyTenDarkThemeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ApplyTenDarkThemeToolStripMenuItem.Click
+        PortableThemeEngine.userTheme.LoadXml(My.Resources.TenDarkTheme_XML)
+        PortableUXLLauncher_ThemeEngine.PortableThemeEngine.themeEngine_ApplyTheme("TenDarkTheme", Me)
+        PortableUXLLauncher_ThemeEngine.PortableThemeEngine.themeEngine_ApplyTheme("TenDarkTheme", aaformOptionsWindow)
     End Sub
 End Class

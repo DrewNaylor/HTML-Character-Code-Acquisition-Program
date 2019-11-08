@@ -34,6 +34,7 @@ Partial Class aaformMainWindow
         Me.buttonSearch = New System.Windows.Forms.Button()
         Me.tablelayoutpanelMainWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.textboxOutput = New System.Windows.Forms.TextBox()
+        Me.ApplyTenDarkThemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.menubarMainWindow.SuspendLayout()
         Me.tablelayoutpanelMainWindow.SuspendLayout()
         Me.SuspendLayout()
@@ -56,7 +57,7 @@ Partial Class aaformMainWindow
         '
         'menubarFileMenu
         '
-        Me.menubarFileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenuExitButton})
+        Me.menubarFileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenuExitButton, Me.ApplyTenDarkThemeToolStripMenuItem})
         Me.menubarFileMenu.Name = "menubarFileMenu"
         Me.menubarFileMenu.Size = New System.Drawing.Size(37, 20)
         Me.menubarFileMenu.Text = "&File"
@@ -64,20 +65,20 @@ Partial Class aaformMainWindow
         'menubarFileMenuExitButton
         '
         Me.menubarFileMenuExitButton.Name = "menubarFileMenuExitButton"
-        Me.menubarFileMenuExitButton.Size = New System.Drawing.Size(92, 22)
+        Me.menubarFileMenuExitButton.Size = New System.Drawing.Size(93, 22)
         Me.menubarFileMenuExitButton.Text = "&Exit"
         '
         'menubarToolsMenu
         '
         Me.menubarToolsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarToolsMenuOptionsButton})
         Me.menubarToolsMenu.Name = "menubarToolsMenu"
-        Me.menubarToolsMenu.Size = New System.Drawing.Size(47, 20)
+        Me.menubarToolsMenu.Size = New System.Drawing.Size(46, 20)
         Me.menubarToolsMenu.Text = "&Tools"
         '
         'menubarToolsMenuOptionsButton
         '
         Me.menubarToolsMenuOptionsButton.Name = "menubarToolsMenuOptionsButton"
-        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(125, 22)
         Me.menubarToolsMenuOptionsButton.Text = "&Options..."
         '
         'menubarHelpMenu
@@ -90,7 +91,7 @@ Partial Class aaformMainWindow
         'menubarHelpMenuAboutButton
         '
         Me.menubarHelpMenuAboutButton.Name = "menubarHelpMenuAboutButton"
-        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(152, 22)
+        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(116, 22)
         Me.menubarHelpMenuAboutButton.Text = "&About..."
         '
         'textboxInput
@@ -140,6 +141,12 @@ Partial Class aaformMainWindow
         Me.textboxOutput.Size = New System.Drawing.Size(394, 246)
         Me.textboxOutput.TabIndex = 2
         '
+        'ApplyTenDarkThemeToolStripMenuItem
+        '
+        Me.ApplyTenDarkThemeToolStripMenuItem.Name = "ApplyTenDarkThemeToolStripMenuItem"
+        Me.ApplyTenDarkThemeToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
+        Me.ApplyTenDarkThemeToolStripMenuItem.Text = "Apply TenDark theme"
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -172,4 +179,5 @@ Partial Class aaformMainWindow
     Friend WithEvents buttonSearch As Button
     Friend WithEvents tablelayoutpanelMainWindow As TableLayoutPanel
     Friend WithEvents textboxOutput As TextBox
+    Friend WithEvents ApplyTenDarkThemeToolStripMenuItem As ToolStripMenuItem
 End Class
