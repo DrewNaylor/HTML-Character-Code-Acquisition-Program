@@ -104,6 +104,19 @@ Public Class aaformMainWindow
         Else
             ' If the textbox is empty, then clear the output textbox.
             textboxOutput.Clear()
+            ' Now we can have it display everything if the user wants
+            ' to have the search function as a filter.
+            If My.Settings.searchIsFilter = True Then
+                For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
+                    Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
+                    ' Underscores are replaced with and symbols so that they match how HTML expects
+                    ' character codes to look. The underscores are necessary for now as XML complains
+                    ' when they're in the file, so this is a workaround.
+                    textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
+                Next
+                ' Now trim the end.
+                textboxOutput.Text = textboxOutput.Text.TrimEnd
+            End If
         End If
     End Sub
 
