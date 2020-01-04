@@ -31,16 +31,8 @@ Public Class aaformMainWindow
     Private Shared searchNamespaceManager As New XmlNamespaceManager(xmlFileToSearch.NameTable)
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-#Region "Show or hide Search button."
-        ' Show Search button if the user wants to.
-        If My.Settings.showSearchButton = True Then
-            buttonSearch.Show()
-            tablelayoutpanelMainWindow.SetColumnSpan(textboxInput, 1)
-        Else
-            buttonSearch.Hide()
-            tablelayoutpanelMainWindow.SetColumnSpan(textboxInput, 2)
-        End If
-#End Region
+        ' Determine if the Search button should be shown or not.
+        hideOrShowSearchButton()
 
 #Region "Load in XML file."
         ' Add a namespace to the namespace manager so that XML works properly.
@@ -56,6 +48,20 @@ Public Class aaformMainWindow
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
 #End Region
     End Sub
+
+#Region "Show or hide Search button."
+    Friend Shared Sub hideOrShowSearchButton()
+
+        ' Show Search button if the user wants to.
+        If My.Settings.showSearchButton = True Then
+            aaformMainWindow.buttonSearch.Show()
+            aaformMainWindow.tablelayoutpanelMainWindow.SetColumnSpan(aaformMainWindow.textboxInput, 1)
+        Else
+            aaformMainWindow.buttonSearch.Hide()
+            aaformMainWindow.tablelayoutpanelMainWindow.SetColumnSpan(aaformMainWindow.textboxInput, 2)
+        End If
+    End Sub
+#End Region
 
     Private Sub buttonSearch_Click(sender As Object, e As EventArgs) Handles buttonSearch.Click
         ' Get the character codes.

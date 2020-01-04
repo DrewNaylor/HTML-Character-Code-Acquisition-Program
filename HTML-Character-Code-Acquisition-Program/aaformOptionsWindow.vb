@@ -56,10 +56,17 @@ Public Class aaformOptionsWindow
             My.Settings.searchWhenTyping = True
         End If
 
+        ' Next, configure the Search button visibility.
+        My.Settings.showSearchButton = checkboxShowSearchButton.Checked
+
 
         ' Now save the settings and reload them before closing the window.
         My.Settings.Save()
         My.Settings.Reload()
+
+        ' If we need to show or hide the search button, do that.
+        aaformMainWindow.hideOrShowSearchButton()
+
         Me.Close()
     End Sub
 #End Region
