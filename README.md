@@ -13,7 +13,7 @@ Copyright notice:
 ```
 HTML Character Code Acquisition Program - Developer tool to look up HTML
 character codes/HTML character entities.
-Copyright (C) 2019 Drew Naylor
+Copyright (C) 2019-2020 Drew Naylor
 (Note that the copyright years include the years left out by the hyphen.)
 
 This file is part of HTML Character Code Acquisition Program

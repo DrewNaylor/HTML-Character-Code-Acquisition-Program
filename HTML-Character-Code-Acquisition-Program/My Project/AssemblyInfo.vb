@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Developer tool to look up HTML character codes/HTML character entities.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("HTML Character Code Acquisition Program")>
-<Assembly: AssemblyCopyright("Copyright © 2019 Drew Naylor. Licensed under Gnu GPLv3+.")>
+<Assembly: AssemblyCopyright("Copyright © 2019-2020 Drew Naylor. Licensed under Gnu GPLv3+.")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
