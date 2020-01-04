@@ -35,13 +35,13 @@ along with html-ccap.  If not, see <http://www.gnu.org/licenses/>.
 
 ## Features to add
 
-- Search when typing (if the user wants it that way)
+- ~~Search when typing (if the user wants it that way)~~ Implemented in the Options window.
   - GUI configuration is needed, but this can be changed in the config file.
   - Is enabled when `My.Settings.searchWhenTyping` is set to `True`.
-- Search on Enter (if the user wants it to work like that instead of when typing)
+- ~~Search on Enter (if the user wants it to work like that instead of when typing)~~ Implemented in the Options window.
   - Needs to be added to a GUI, but already in the config file like Search when typing.
   - Is enabled when `My.Settings.searchWhenTyping` is set to `False`.
-- An option to hide the Search button if the user wants to
+- ~~An option to hide the Search button if the user wants to~~  Implemented in the Options window.
   - Can already be done from the config file.
   - Search button is hidden when `My.Settings.showSearchButton` is set to `False`.
 - Updating the XML file from the Options window.
