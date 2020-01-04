@@ -48,6 +48,10 @@ Public Class aaformMainWindow
         Debug.WriteLine("XML file contents:")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
 #End Region
+
+        ' Display the entire XML file if the user wants
+        ' to use Search as a filter.
+        getCodes()
     End Sub
 
 #Region "Show or hide Search button."
