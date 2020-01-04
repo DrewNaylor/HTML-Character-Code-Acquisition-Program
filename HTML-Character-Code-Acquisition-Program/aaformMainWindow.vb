@@ -42,7 +42,8 @@ Public Class aaformMainWindow
         ' Load in the XML file with the character codes from the current directory.
         ' This would preferably also have an option to load it from the
         ' application's Resources, but the XML file isn't close enough
-        ' to completion for that to make sense.        
+        ' to completion for that to make sense.
+        ' TODO: Allow the XML file to be pulled from application resources.
         xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
         Debug.WriteLine("XML file contents:")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
