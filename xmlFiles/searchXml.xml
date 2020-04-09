@@ -22,8 +22,15 @@
 			<Alias>Non-breaking space</Alias>
 			<Alias>No break space</Alias>
 		</characterCode>
-		<characterCode>Pound: _pound;</characterCode>
-		<characterCode>Registered trademark: _reg;</characterCode>
-		<characterCode>Yen: _yen;</characterCode>
+		<characterCode code="_pound;" name="Pound">
+			<Alias>Pound</Alias>
+		</characterCode>
+		<characterCode code="_reg;" name="Registered trademark">
+			<Alias>Registered trademark</Alias>
+			<Alias>(R)</Alias>
+		</characterCode>
+		<characterCode code="_yen;" name="Yen">
+			<Alias>Yen</Alias>
+		</characterCode>
 	</characterCodeSection>
 </root>
