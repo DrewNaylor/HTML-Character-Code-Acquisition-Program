@@ -284,10 +284,10 @@ Partial Class aaformOptionsWindow
         Me.radiobuttonSearchAnywhereInXml.AutoSize = True
         Me.radiobuttonSearchAnywhereInXml.Location = New System.Drawing.Point(10, 22)
         Me.radiobuttonSearchAnywhereInXml.Name = "radiobuttonSearchAnywhereInXml"
-        Me.radiobuttonSearchAnywhereInXml.Size = New System.Drawing.Size(233, 21)
+        Me.radiobuttonSearchAnywhereInXml.Size = New System.Drawing.Size(300, 21)
         Me.radiobuttonSearchAnywhereInXml.TabIndex = 0
         Me.radiobuttonSearchAnywhereInXml.TabStop = True
-        Me.radiobuttonSearchAnywhereInXml.Text = "Search anywhere in XML entries"
+        Me.radiobuttonSearchAnywhereInXml.Text = "Search anywhere in character code entries"
         Me.radiobuttonSearchAnywhereInXml.UseVisualStyleBackColor = True
         '
         'radiobuttonSearchFromStart
@@ -295,10 +295,10 @@ Partial Class aaformOptionsWindow
         Me.radiobuttonSearchFromStart.AutoSize = True
         Me.radiobuttonSearchFromStart.Location = New System.Drawing.Point(10, 50)
         Me.radiobuttonSearchFromStart.Name = "radiobuttonSearchFromStart"
-        Me.radiobuttonSearchFromStart.Size = New System.Drawing.Size(267, 21)
+        Me.radiobuttonSearchFromStart.Size = New System.Drawing.Size(334, 21)
         Me.radiobuttonSearchFromStart.TabIndex = 1
         Me.radiobuttonSearchFromStart.TabStop = True
-        Me.radiobuttonSearchFromStart.Text = "Search from beginning of XML entries"
+        Me.radiobuttonSearchFromStart.Text = "Search from beginning of character code entries"
         Me.radiobuttonSearchFromStart.UseVisualStyleBackColor = True
         '
         'aaformOptionsWindow
