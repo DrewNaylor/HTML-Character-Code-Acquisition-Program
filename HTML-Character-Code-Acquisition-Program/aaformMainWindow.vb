@@ -34,6 +34,7 @@ Public Class aaformMainWindow
         ' Determine if the Search button should be shown or not.
         hideOrShowSearchButton()
 
+
 #Region "Load in XML file."
         ' Add a namespace to the namespace manager so that XML works properly.
         searchNamespaceManager.AddNamespace("html-ccap", "https://drewnaylor.github.io/xml")

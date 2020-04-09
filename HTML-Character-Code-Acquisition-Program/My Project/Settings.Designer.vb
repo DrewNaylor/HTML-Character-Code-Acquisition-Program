@@ -173,6 +173,18 @@ Namespace My
                 Me("searchFromStart") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
+        Public Property showStatusBar() As Boolean
+            Get
+                Return CType(Me("showStatusBar"),Boolean)
+            End Get
+            Set
+                Me("showStatusBar") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
