@@ -93,27 +93,36 @@ Public Class aaformMainWindow
             ' Based on this SO answer:
             ' https://stackoverflow.com/a/17708002
             For Each characterCodeNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
-                'Dim currentNode As XmlNode = characterCodeNode
-                'MessageBox.Show("character code node: " & characterCodeNode.LocalName)
-
+                ' Look inside the nodes within the character code section.
+                ' These would be the <characterCode> nodes.
 
                 For Each currentNode As XmlNode In characterCodeNode
-                    'MessageBox.Show("current node: " & currentNode.LocalName)
+                    ' Look inside each node inside the <characterCode> nodes.
+                    ' These are the <Alias> nodes.
+
                     If currentNode.InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
-                        'MessageBox.Show("matching node name: " & currentNode.LocalName)
-                        'MessageBox.Show("matching node contents: " & currentNode.InnerText)
-                        'MessageBox.Show("parent of matching node: " & currentNode.ParentNode.LocalName)
+                        ' If the inner text of the alias node, when set to lowercase,
+                        ' contains what the user typed into the search bar,
+                        ' we need to grab the attributes of the parent node.
+
                         Dim codeOutput As String = currentNode.ParentNode.Attributes("name").Value.ToString & ": " & currentNode.ParentNode.Attributes("code").Value.Replace("_", "&") & vbCrLf
                         If textboxOutput.Text.Contains(codeOutput) Then
+                            ' If the output textbox contains what we want to output,
+                            ' replace what's already in the output textbox with
+                            ' an empty string.
                             textboxOutput.Text.Replace(codeOutput, String.Empty)
                         Else
+                            ' Otherwise, if it's not in the textbox yet,
+                            ' put it in there.
                             textboxOutput.AppendText(codeOutput)
                         End If
                     End If
 
+                    ' Check the next <Alias> node. 
                     currentNode = currentNode.NextSibling
                 Next
 
+                ' Check the next <characterCode> node.
                 characterCodeNode = characterCodeNode.NextSibling
             Next
 
