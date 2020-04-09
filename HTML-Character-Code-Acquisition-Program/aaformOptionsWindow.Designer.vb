@@ -42,11 +42,15 @@ Partial Class aaformOptionsWindow
         Me.groupboxWhereToSearch = New System.Windows.Forms.GroupBox()
         Me.radiobuttonSearchAnywhereInXml = New System.Windows.Forms.RadioButton()
         Me.radiobuttonSearchFromStart = New System.Windows.Forms.RadioButton()
+        Me.groupboxSearchResultsDisplay = New System.Windows.Forms.GroupBox()
+        Me.checkboxShowMatchingAlias = New System.Windows.Forms.CheckBox()
+        Me.checkboxShowNumericCode = New System.Windows.Forms.CheckBox()
         Me.tablelayoutpanelOptionsWindow.SuspendLayout()
         Me.groupboxView.SuspendLayout()
         Me.groupboxXmlUpdates.SuspendLayout()
         Me.groupboxWhenToSearch.SuspendLayout()
         Me.groupboxWhereToSearch.SuspendLayout()
+        Me.groupboxSearchResultsDisplay.SuspendLayout()
         Me.SuspendLayout()
         '
         'tablelayoutpanelOptionsWindow
@@ -56,24 +60,26 @@ Partial Class aaformOptionsWindow
         Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91.0!))
         Me.tablelayoutpanelOptionsWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91.0!))
-        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxView, 0, 3)
-        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxXmlUpdates, 0, 2)
-        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonSave, 3, 4)
-        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonCancel, 2, 4)
-        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonRestoreDefaults, 0, 4)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxView, 0, 4)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxXmlUpdates, 0, 3)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonSave, 3, 5)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonCancel, 2, 5)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.buttonRestoreDefaults, 0, 5)
         Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxWhenToSearch, 0, 0)
         Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxWhereToSearch, 0, 1)
+        Me.tablelayoutpanelOptionsWindow.Controls.Add(Me.groupboxSearchResultsDisplay, 0, 2)
         Me.tablelayoutpanelOptionsWindow.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tablelayoutpanelOptionsWindow.Location = New System.Drawing.Point(0, 0)
         Me.tablelayoutpanelOptionsWindow.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tablelayoutpanelOptionsWindow.Name = "tablelayoutpanelOptionsWindow"
-        Me.tablelayoutpanelOptionsWindow.RowCount = 5
+        Me.tablelayoutpanelOptionsWindow.RowCount = 6
         Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
         Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 87.0!))
-        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108.0!))
+        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 85.0!))
+        Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110.0!))
         Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.tablelayoutpanelOptionsWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
-        Me.tablelayoutpanelOptionsWindow.Size = New System.Drawing.Size(394, 508)
+        Me.tablelayoutpanelOptionsWindow.Size = New System.Drawing.Size(394, 598)
         Me.tablelayoutpanelOptionsWindow.TabIndex = 0
         '
         'groupboxView
@@ -84,11 +90,11 @@ Partial Class aaformOptionsWindow
         Me.groupboxView.Controls.Add(Me.checkboxAlwaysOnTop)
         Me.groupboxView.Controls.Add(Me.checkboxShowSearchButton)
         Me.groupboxView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxView.Location = New System.Drawing.Point(4, 311)
+        Me.groupboxView.Location = New System.Drawing.Point(4, 398)
         Me.groupboxView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.groupboxView.Name = "groupboxView"
         Me.groupboxView.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.groupboxView.Size = New System.Drawing.Size(386, 153)
+        Me.groupboxView.Size = New System.Drawing.Size(386, 156)
         Me.groupboxView.TabIndex = 5
         Me.groupboxView.TabStop = False
         Me.groupboxView.Text = "View"
@@ -143,11 +149,11 @@ Partial Class aaformOptionsWindow
         Me.groupboxXmlUpdates.Controls.Add(Me.buttonCheckForXmlUpdates)
         Me.groupboxXmlUpdates.Controls.Add(Me.labelCurrentXmlVersion)
         Me.groupboxXmlUpdates.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.groupboxXmlUpdates.Location = New System.Drawing.Point(4, 203)
+        Me.groupboxXmlUpdates.Location = New System.Drawing.Point(4, 288)
         Me.groupboxXmlUpdates.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.groupboxXmlUpdates.Name = "groupboxXmlUpdates"
         Me.groupboxXmlUpdates.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.groupboxXmlUpdates.Size = New System.Drawing.Size(386, 100)
+        Me.groupboxXmlUpdates.Size = New System.Drawing.Size(386, 102)
         Me.groupboxXmlUpdates.TabIndex = 4
         Me.groupboxXmlUpdates.TabStop = False
         Me.groupboxXmlUpdates.Text = "XML file updates"
@@ -186,7 +192,7 @@ Partial Class aaformOptionsWindow
         'buttonSave
         '
         Me.buttonSave.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.buttonSave.Location = New System.Drawing.Point(307, 472)
+        Me.buttonSave.Location = New System.Drawing.Point(307, 562)
         Me.buttonSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.buttonSave.Name = "buttonSave"
         Me.buttonSave.Size = New System.Drawing.Size(83, 32)
@@ -197,7 +203,7 @@ Partial Class aaformOptionsWindow
         'buttonCancel
         '
         Me.buttonCancel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.buttonCancel.Location = New System.Drawing.Point(216, 472)
+        Me.buttonCancel.Location = New System.Drawing.Point(216, 562)
         Me.buttonCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.buttonCancel.Name = "buttonCancel"
         Me.buttonCancel.Size = New System.Drawing.Size(83, 32)
@@ -208,7 +214,7 @@ Partial Class aaformOptionsWindow
         'buttonRestoreDefaults
         '
         Me.buttonRestoreDefaults.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.buttonRestoreDefaults.Location = New System.Drawing.Point(4, 472)
+        Me.buttonRestoreDefaults.Location = New System.Drawing.Point(4, 562)
         Me.buttonRestoreDefaults.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.buttonRestoreDefaults.Name = "buttonRestoreDefaults"
         Me.buttonRestoreDefaults.Size = New System.Drawing.Size(83, 32)
@@ -284,10 +290,10 @@ Partial Class aaformOptionsWindow
         Me.radiobuttonSearchAnywhereInXml.AutoSize = True
         Me.radiobuttonSearchAnywhereInXml.Location = New System.Drawing.Point(10, 22)
         Me.radiobuttonSearchAnywhereInXml.Name = "radiobuttonSearchAnywhereInXml"
-        Me.radiobuttonSearchAnywhereInXml.Size = New System.Drawing.Size(300, 21)
+        Me.radiobuttonSearchAnywhereInXml.Size = New System.Drawing.Size(234, 21)
         Me.radiobuttonSearchAnywhereInXml.TabIndex = 0
         Me.radiobuttonSearchAnywhereInXml.TabStop = True
-        Me.radiobuttonSearchAnywhereInXml.Text = "Search anywhere in character code entries"
+        Me.radiobuttonSearchAnywhereInXml.Text = "Search anywhere in alias entries"
         Me.radiobuttonSearchAnywhereInXml.UseVisualStyleBackColor = True
         '
         'radiobuttonSearchFromStart
@@ -295,17 +301,50 @@ Partial Class aaformOptionsWindow
         Me.radiobuttonSearchFromStart.AutoSize = True
         Me.radiobuttonSearchFromStart.Location = New System.Drawing.Point(10, 50)
         Me.radiobuttonSearchFromStart.Name = "radiobuttonSearchFromStart"
-        Me.radiobuttonSearchFromStart.Size = New System.Drawing.Size(334, 21)
+        Me.radiobuttonSearchFromStart.Size = New System.Drawing.Size(268, 21)
         Me.radiobuttonSearchFromStart.TabIndex = 1
         Me.radiobuttonSearchFromStart.TabStop = True
-        Me.radiobuttonSearchFromStart.Text = "Search from beginning of character code entries"
+        Me.radiobuttonSearchFromStart.Text = "Search from beginning of alias entries"
         Me.radiobuttonSearchFromStart.UseVisualStyleBackColor = True
+        '
+        'groupboxSearchResultsDisplay
+        '
+        Me.tablelayoutpanelOptionsWindow.SetColumnSpan(Me.groupboxSearchResultsDisplay, 4)
+        Me.groupboxSearchResultsDisplay.Controls.Add(Me.checkboxShowNumericCode)
+        Me.groupboxSearchResultsDisplay.Controls.Add(Me.checkboxShowMatchingAlias)
+        Me.groupboxSearchResultsDisplay.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.groupboxSearchResultsDisplay.Location = New System.Drawing.Point(3, 202)
+        Me.groupboxSearchResultsDisplay.Name = "groupboxSearchResultsDisplay"
+        Me.groupboxSearchResultsDisplay.Size = New System.Drawing.Size(388, 79)
+        Me.groupboxSearchResultsDisplay.TabIndex = 7
+        Me.groupboxSearchResultsDisplay.TabStop = False
+        Me.groupboxSearchResultsDisplay.Text = "Search results display"
+        '
+        'checkboxShowMatchingAlias
+        '
+        Me.checkboxShowMatchingAlias.AutoSize = True
+        Me.checkboxShowMatchingAlias.Location = New System.Drawing.Point(10, 21)
+        Me.checkboxShowMatchingAlias.Name = "checkboxShowMatchingAlias"
+        Me.checkboxShowMatchingAlias.Size = New System.Drawing.Size(158, 21)
+        Me.checkboxShowMatchingAlias.TabIndex = 0
+        Me.checkboxShowMatchingAlias.Text = "Show matching alias"
+        Me.checkboxShowMatchingAlias.UseVisualStyleBackColor = True
+        '
+        'checkboxShowNumericCode
+        '
+        Me.checkboxShowNumericCode.AutoSize = True
+        Me.checkboxShowNumericCode.Location = New System.Drawing.Point(10, 48)
+        Me.checkboxShowNumericCode.Name = "checkboxShowNumericCode"
+        Me.checkboxShowNumericCode.Size = New System.Drawing.Size(320, 21)
+        Me.checkboxShowNumericCode.TabIndex = 1
+        Me.checkboxShowNumericCode.Text = "Show numeric code in addition to named code"
+        Me.checkboxShowNumericCode.UseVisualStyleBackColor = True
         '
         'aaformOptionsWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.ClientSize = New System.Drawing.Size(394, 508)
+        Me.ClientSize = New System.Drawing.Size(394, 598)
         Me.Controls.Add(Me.tablelayoutpanelOptionsWindow)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
@@ -325,6 +364,8 @@ Partial Class aaformOptionsWindow
         Me.groupboxWhenToSearch.PerformLayout()
         Me.groupboxWhereToSearch.ResumeLayout(False)
         Me.groupboxWhereToSearch.PerformLayout()
+        Me.groupboxSearchResultsDisplay.ResumeLayout(False)
+        Me.groupboxSearchResultsDisplay.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -349,4 +390,7 @@ Partial Class aaformOptionsWindow
     Friend WithEvents groupboxWhereToSearch As GroupBox
     Friend WithEvents radiobuttonSearchFromStart As RadioButton
     Friend WithEvents radiobuttonSearchAnywhereInXml As RadioButton
+    Friend WithEvents groupboxSearchResultsDisplay As GroupBox
+    Friend WithEvents checkboxShowMatchingAlias As CheckBox
+    Friend WithEvents checkboxShowNumericCode As CheckBox
 End Class
