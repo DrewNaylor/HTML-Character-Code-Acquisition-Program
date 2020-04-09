@@ -47,6 +47,7 @@ Partial Class aaformMainWindow
         '
         Me.statusbarMainWindow.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.statusbarMainWindow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statuslabelFilePath})
+        Me.statusbarMainWindow.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
         Me.statusbarMainWindow.Location = New System.Drawing.Point(0, 383)
         Me.statusbarMainWindow.Name = "statusbarMainWindow"
         Me.statusbarMainWindow.Padding = New System.Windows.Forms.Padding(1, 0, 18, 0)
@@ -56,10 +57,9 @@ Partial Class aaformMainWindow
         'statuslabelFilePath
         '
         Me.statuslabelFilePath.Name = "statuslabelFilePath"
-        Me.statuslabelFilePath.Size = New System.Drawing.Size(442, 20)
+        Me.statuslabelFilePath.Size = New System.Drawing.Size(131, 20)
         Me.statuslabelFilePath.Spring = True
         Me.statuslabelFilePath.Text = "statuslabelFilePath"
-        Me.statuslabelFilePath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'menubarMainWindow
         '
