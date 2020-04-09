@@ -14,6 +14,7 @@
 		</characterCode>
 		<characterCode code="_copy;" name="Copyright">
 			<Alias>Copyright</Alias>
+			<Alias>(C)</Alias>
 		</characterCode>
 		<characterCode code="_euro;" name="Euro">
 			<Alias>Euro</Alias>
