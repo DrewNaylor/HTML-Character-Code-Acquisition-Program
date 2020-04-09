@@ -40,17 +40,21 @@ Partial Class aaformMainWindow
         '
         'statusbarMainWindow
         '
-        Me.statusbarMainWindow.Location = New System.Drawing.Point(0, 304)
+        Me.statusbarMainWindow.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.statusbarMainWindow.Location = New System.Drawing.Point(0, 386)
         Me.statusbarMainWindow.Name = "statusbarMainWindow"
-        Me.statusbarMainWindow.Size = New System.Drawing.Size(400, 22)
+        Me.statusbarMainWindow.Padding = New System.Windows.Forms.Padding(1, 0, 18, 0)
+        Me.statusbarMainWindow.Size = New System.Drawing.Size(500, 22)
         Me.statusbarMainWindow.TabIndex = 0
         '
         'menubarMainWindow
         '
+        Me.menubarMainWindow.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.menubarMainWindow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenu, Me.menubarToolsMenu, Me.menubarHelpMenu})
         Me.menubarMainWindow.Location = New System.Drawing.Point(0, 0)
         Me.menubarMainWindow.Name = "menubarMainWindow"
-        Me.menubarMainWindow.Size = New System.Drawing.Size(400, 24)
+        Me.menubarMainWindow.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.menubarMainWindow.Size = New System.Drawing.Size(500, 28)
         Me.menubarMainWindow.TabIndex = 1
         Me.menubarMainWindow.Text = "MenuStrip1"
         '
@@ -58,55 +62,57 @@ Partial Class aaformMainWindow
         '
         Me.menubarFileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenuExitButton})
         Me.menubarFileMenu.Name = "menubarFileMenu"
-        Me.menubarFileMenu.Size = New System.Drawing.Size(37, 20)
+        Me.menubarFileMenu.Size = New System.Drawing.Size(44, 24)
         Me.menubarFileMenu.Text = "&File"
         '
         'menubarFileMenuExitButton
         '
         Me.menubarFileMenuExitButton.Name = "menubarFileMenuExitButton"
-        Me.menubarFileMenuExitButton.Size = New System.Drawing.Size(93, 22)
+        Me.menubarFileMenuExitButton.Size = New System.Drawing.Size(108, 26)
         Me.menubarFileMenuExitButton.Text = "&Exit"
         '
         'menubarToolsMenu
         '
         Me.menubarToolsMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarToolsMenuOptionsButton})
         Me.menubarToolsMenu.Name = "menubarToolsMenu"
-        Me.menubarToolsMenu.Size = New System.Drawing.Size(46, 20)
+        Me.menubarToolsMenu.Size = New System.Drawing.Size(56, 24)
         Me.menubarToolsMenu.Text = "&Tools"
         '
         'menubarToolsMenuOptionsButton
         '
         Me.menubarToolsMenuOptionsButton.Name = "menubarToolsMenuOptionsButton"
-        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(125, 22)
+        Me.menubarToolsMenuOptionsButton.Size = New System.Drawing.Size(145, 26)
         Me.menubarToolsMenuOptionsButton.Text = "&Options..."
         '
         'menubarHelpMenu
         '
         Me.menubarHelpMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarHelpMenuAboutButton})
         Me.menubarHelpMenu.Name = "menubarHelpMenu"
-        Me.menubarHelpMenu.Size = New System.Drawing.Size(44, 20)
+        Me.menubarHelpMenu.Size = New System.Drawing.Size(53, 24)
         Me.menubarHelpMenu.Text = "&Help"
         '
         'menubarHelpMenuAboutButton
         '
         Me.menubarHelpMenuAboutButton.Name = "menubarHelpMenuAboutButton"
-        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(116, 22)
+        Me.menubarHelpMenuAboutButton.Size = New System.Drawing.Size(134, 26)
         Me.menubarHelpMenuAboutButton.Text = "&About..."
         '
         'textboxInput
         '
         Me.textboxInput.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.textboxInput.Location = New System.Drawing.Point(3, 3)
+        Me.textboxInput.Location = New System.Drawing.Point(4, 4)
+        Me.textboxInput.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.textboxInput.Name = "textboxInput"
-        Me.textboxInput.Size = New System.Drawing.Size(323, 20)
+        Me.textboxInput.Size = New System.Drawing.Size(403, 22)
         Me.textboxInput.TabIndex = 0
         '
         'buttonSearch
         '
         Me.buttonSearch.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.buttonSearch.Location = New System.Drawing.Point(332, 3)
+        Me.buttonSearch.Location = New System.Drawing.Point(415, 4)
+        Me.buttonSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.buttonSearch.Name = "buttonSearch"
-        Me.buttonSearch.Size = New System.Drawing.Size(65, 22)
+        Me.buttonSearch.Size = New System.Drawing.Size(81, 27)
         Me.buttonSearch.TabIndex = 1
         Me.buttonSearch.Text = "Search"
         Me.buttonSearch.UseVisualStyleBackColor = True
@@ -115,40 +121,43 @@ Partial Class aaformMainWindow
         '
         Me.tablelayoutpanelMainWindow.ColumnCount = 2
         Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71.0!))
+        Me.tablelayoutpanelMainWindow.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89.0!))
         Me.tablelayoutpanelMainWindow.Controls.Add(Me.buttonSearch, 1, 0)
         Me.tablelayoutpanelMainWindow.Controls.Add(Me.textboxInput, 0, 0)
         Me.tablelayoutpanelMainWindow.Controls.Add(Me.textboxOutput, 0, 1)
         Me.tablelayoutpanelMainWindow.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tablelayoutpanelMainWindow.Location = New System.Drawing.Point(0, 24)
+        Me.tablelayoutpanelMainWindow.Location = New System.Drawing.Point(0, 28)
+        Me.tablelayoutpanelMainWindow.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tablelayoutpanelMainWindow.Name = "tablelayoutpanelMainWindow"
         Me.tablelayoutpanelMainWindow.RowCount = 2
-        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28.0!))
+        Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(400, 280)
+        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(500, 358)
         Me.tablelayoutpanelMainWindow.TabIndex = 3
         '
         'textboxOutput
         '
         Me.tablelayoutpanelMainWindow.SetColumnSpan(Me.textboxOutput, 2)
         Me.textboxOutput.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.textboxOutput.Location = New System.Drawing.Point(3, 31)
+        Me.textboxOutput.Location = New System.Drawing.Point(4, 39)
+        Me.textboxOutput.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.textboxOutput.Multiline = True
         Me.textboxOutput.Name = "textboxOutput"
         Me.textboxOutput.ReadOnly = True
         Me.textboxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.textboxOutput.Size = New System.Drawing.Size(394, 246)
+        Me.textboxOutput.Size = New System.Drawing.Size(492, 315)
         Me.textboxOutput.TabIndex = 2
         '
         'aaformMainWindow
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.ClientSize = New System.Drawing.Size(400, 326)
+        Me.ClientSize = New System.Drawing.Size(500, 408)
         Me.Controls.Add(Me.tablelayoutpanelMainWindow)
         Me.Controls.Add(Me.statusbarMainWindow)
         Me.Controls.Add(Me.menubarMainWindow)
         Me.MainMenuStrip = Me.menubarMainWindow
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "aaformMainWindow"
         Me.Text = "HTML Character Code Acquisition Program"
         Me.menubarMainWindow.ResumeLayout(False)

@@ -1,8 +1,13 @@
 <root>
 <version>1.0</version>
 	<characterCodeSection>
-		<characterCode>Ampersand/and symbol: _amp;</characterCode>
-		<characterCode>Bullet: _bull;</characterCode>
+		<characterCode code="_amp;">
+			<Alias>Ampersand</Alias>
+			<Alias>and symbol</Alias>
+		</characterCode>
+		<characterCode code="_bull;">
+			<Alias>Bullet</Alias>
+		</characterCode>
 		<characterCode>Cent: _cent;</characterCode>
 		<characterCode>Copyright: _copy;</characterCode>
 		<characterCode>Euro: _euro;</characterCode>
