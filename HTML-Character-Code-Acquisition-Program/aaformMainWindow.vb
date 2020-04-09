@@ -89,19 +89,42 @@ Public Class aaformMainWindow
         If Not textboxInput.Text = "" Then
             textboxOutput.Clear()
             Debug.WriteLine("Entries in XML file:")
-            For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
-                Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
-                ' If it's determined that the text in the node contains the text in the textbox,
-                ' then that is appended to the output textbox.
-                ' To compare the text, both the text in the textbox and the text in the node
-                ' are made to be lowercase and culture/language-invariant.
-                If characterNode.InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
-                    ' Underscores are replaced with and symbols so that they match how HTML expects
-                    ' character codes to look. The underscores are necessary for now as XML complains
-                    ' when they're in the file, so this is a workaround.
-                    textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
-                End If
+
+            ' Based on this SO answer:
+            ' https://stackoverflow.com/a/17708002
+            For Each characterCodeNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
+                'Dim currentNode As XmlNode = characterCodeNode
+                'MessageBox.Show("character code node: " & characterCodeNode.LocalName)
+
+
+                For Each currentNode As XmlNode In characterCodeNode
+                    'MessageBox.Show("current node: " & currentNode.LocalName)
+                    If currentNode.InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
+                        'MessageBox.Show("matching node name: " & currentNode.LocalName)
+                        'MessageBox.Show("matching node contents: " & currentNode.InnerText)
+                        'MessageBox.Show("parent of matching node: " & currentNode.ParentNode.LocalName)
+                        textboxOutput.AppendText(currentNode.ParentNode.Attributes("name").Value.ToString & ": " & currentNode.ParentNode.Attributes("code").Value.Replace("_", "&") & vbCrLf)
+                    End If
+
+                    currentNode = currentNode.NextSibling
+                Next
+
+                characterCodeNode = characterCodeNode.NextSibling
             Next
+
+            'Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
+            ' If it's determined that the text in the node contains the text in the textbox,
+            ' then that is appended to the output textbox.
+            ' To compare the text, both the text in the textbox and the text in the node
+            ' are made to be lowercase and culture/language-invariant.
+
+            '    If characterNode.SelectSingleNode("Alias").InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
+            '        ' Underscores are replaced with and symbols so that they match how HTML expects
+            '        ' character codes to look. The underscores are necessary for now as XML complains
+            '        ' when they're in the file, so this is a workaround.
+            '        textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
+            '    End If
+            'Next
             ' Now trim the end.
             textboxOutput.Text = textboxOutput.Text.TrimEnd
 
