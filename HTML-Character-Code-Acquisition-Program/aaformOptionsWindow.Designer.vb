@@ -40,10 +40,13 @@ Partial Class aaformOptionsWindow
         Me.radiobuttonSearchWhenTyping = New System.Windows.Forms.RadioButton()
         Me.radiobuttonSearchOnEnter = New System.Windows.Forms.RadioButton()
         Me.groupboxWhereToSearch = New System.Windows.Forms.GroupBox()
+        Me.radiobuttonSearchAnywhereInXml = New System.Windows.Forms.RadioButton()
+        Me.radiobuttonSearchFromStart = New System.Windows.Forms.RadioButton()
         Me.tablelayoutpanelOptionsWindow.SuspendLayout()
         Me.groupboxView.SuspendLayout()
         Me.groupboxXmlUpdates.SuspendLayout()
         Me.groupboxWhenToSearch.SuspendLayout()
+        Me.groupboxWhereToSearch.SuspendLayout()
         Me.SuspendLayout()
         '
         'tablelayoutpanelOptionsWindow
@@ -266,6 +269,8 @@ Partial Class aaformOptionsWindow
         'groupboxWhereToSearch
         '
         Me.tablelayoutpanelOptionsWindow.SetColumnSpan(Me.groupboxWhereToSearch, 4)
+        Me.groupboxWhereToSearch.Controls.Add(Me.radiobuttonSearchFromStart)
+        Me.groupboxWhereToSearch.Controls.Add(Me.radiobuttonSearchAnywhereInXml)
         Me.groupboxWhereToSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.groupboxWhereToSearch.Location = New System.Drawing.Point(3, 115)
         Me.groupboxWhereToSearch.Name = "groupboxWhereToSearch"
@@ -273,6 +278,28 @@ Partial Class aaformOptionsWindow
         Me.groupboxWhereToSearch.TabIndex = 6
         Me.groupboxWhereToSearch.TabStop = False
         Me.groupboxWhereToSearch.Text = "Where to search"
+        '
+        'radiobuttonSearchAnywhereInXml
+        '
+        Me.radiobuttonSearchAnywhereInXml.AutoSize = True
+        Me.radiobuttonSearchAnywhereInXml.Location = New System.Drawing.Point(10, 22)
+        Me.radiobuttonSearchAnywhereInXml.Name = "radiobuttonSearchAnywhereInXml"
+        Me.radiobuttonSearchAnywhereInXml.Size = New System.Drawing.Size(233, 21)
+        Me.radiobuttonSearchAnywhereInXml.TabIndex = 0
+        Me.radiobuttonSearchAnywhereInXml.TabStop = True
+        Me.radiobuttonSearchAnywhereInXml.Text = "Search anywhere in XML entries"
+        Me.radiobuttonSearchAnywhereInXml.UseVisualStyleBackColor = True
+        '
+        'radiobuttonSearchFromStart
+        '
+        Me.radiobuttonSearchFromStart.AutoSize = True
+        Me.radiobuttonSearchFromStart.Location = New System.Drawing.Point(10, 50)
+        Me.radiobuttonSearchFromStart.Name = "radiobuttonSearchFromStart"
+        Me.radiobuttonSearchFromStart.Size = New System.Drawing.Size(267, 21)
+        Me.radiobuttonSearchFromStart.TabIndex = 1
+        Me.radiobuttonSearchFromStart.TabStop = True
+        Me.radiobuttonSearchFromStart.Text = "Search from beginning of XML entries"
+        Me.radiobuttonSearchFromStart.UseVisualStyleBackColor = True
         '
         'aaformOptionsWindow
         '
@@ -296,6 +323,8 @@ Partial Class aaformOptionsWindow
         Me.groupboxXmlUpdates.PerformLayout()
         Me.groupboxWhenToSearch.ResumeLayout(False)
         Me.groupboxWhenToSearch.PerformLayout()
+        Me.groupboxWhereToSearch.ResumeLayout(False)
+        Me.groupboxWhereToSearch.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -318,4 +347,6 @@ Partial Class aaformOptionsWindow
     Friend WithEvents checkboxSaveWindowSizeAndPosition As CheckBox
     Friend WithEvents buttonResetMainWindowSizeAndPosition As Button
     Friend WithEvents groupboxWhereToSearch As GroupBox
+    Friend WithEvents radiobuttonSearchFromStart As RadioButton
+    Friend WithEvents radiobuttonSearchAnywhereInXml As RadioButton
 End Class
