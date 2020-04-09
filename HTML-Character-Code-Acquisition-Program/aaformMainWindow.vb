@@ -103,7 +103,12 @@ Public Class aaformMainWindow
                         'MessageBox.Show("matching node name: " & currentNode.LocalName)
                         'MessageBox.Show("matching node contents: " & currentNode.InnerText)
                         'MessageBox.Show("parent of matching node: " & currentNode.ParentNode.LocalName)
-                        textboxOutput.AppendText(currentNode.ParentNode.Attributes("name").Value.ToString & ": " & currentNode.ParentNode.Attributes("code").Value.Replace("_", "&") & vbCrLf)
+                        Dim codeOutput As String = currentNode.ParentNode.Attributes("name").Value.ToString & ": " & currentNode.ParentNode.Attributes("code").Value.Replace("_", "&") & vbCrLf
+                        If textboxOutput.Text.Contains(codeOutput) Then
+                            textboxOutput.Text.Replace(codeOutput, String.Empty)
+                        Else
+                            textboxOutput.AppendText(codeOutput)
+                        End If
                     End If
 
                     currentNode = currentNode.NextSibling
