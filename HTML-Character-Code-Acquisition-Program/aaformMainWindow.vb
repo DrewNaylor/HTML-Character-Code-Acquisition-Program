@@ -88,7 +88,6 @@ Public Class aaformMainWindow
         ' Also make sure the input textbox isn't empty.
         If Not textboxInput.Text = "" Then
             textboxOutput.Clear()
-            Debug.WriteLine("Entries in XML file:")
 
             ' Based on this SO answer:
             ' https://stackoverflow.com/a/17708002
@@ -136,7 +135,6 @@ Public Class aaformMainWindow
             ' to have the search function as a filter.
             If My.Settings.searchIsFilter = True Then
                 For Each characterNode As XmlNode In xmlFileToSearch.SelectSingleNode("/root/characterCodeSection")
-                    Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
                     ' Underscores are replaced with and symbols so that they match how HTML expects
                     ' character codes to look. The underscores are necessary for now as XML complains
                     ' when they're in the file, so this is a workaround.
