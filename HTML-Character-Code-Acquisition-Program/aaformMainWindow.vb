@@ -126,19 +126,6 @@ Public Class aaformMainWindow
                 characterCodeNode = characterCodeNode.NextSibling
             Next
 
-            'Debug.WriteLine("characterNode.InnerText: " & characterNode.InnerText)
-            ' If it's determined that the text in the node contains the text in the textbox,
-            ' then that is appended to the output textbox.
-            ' To compare the text, both the text in the textbox and the text in the node
-            ' are made to be lowercase and culture/language-invariant.
-
-            '    If characterNode.SelectSingleNode("Alias").InnerText.ToLowerInvariant.Contains(textboxInput.Text.ToLowerInvariant) Then
-            '        ' Underscores are replaced with and symbols so that they match how HTML expects
-            '        ' character codes to look. The underscores are necessary for now as XML complains
-            '        ' when they're in the file, so this is a workaround.
-            '        textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
-            '    End If
-            'Next
             ' Now trim the end.
             textboxOutput.Text = textboxOutput.Text.TrimEnd
 
