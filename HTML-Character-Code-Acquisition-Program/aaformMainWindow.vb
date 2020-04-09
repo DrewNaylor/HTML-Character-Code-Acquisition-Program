@@ -153,7 +153,7 @@ Public Class aaformMainWindow
                     ' Underscores are replaced with and symbols so that they match how HTML expects
                     ' character codes to look. The underscores are necessary for now as XML complains
                     ' when they're in the file, so this is a workaround.
-                    textboxOutput.AppendText(characterNode.InnerText.Replace("_", "&") & vbCrLf)
+                    textboxOutput.AppendText(characterNode.Attributes("name").Value.ToString & ": " & characterNode.Attributes("code").Value.Replace("_", "&") & vbCrLf)
                 Next
                 ' Now trim the end.
                 textboxOutput.Text = textboxOutput.Text.TrimEnd
