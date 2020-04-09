@@ -23,6 +23,7 @@ Partial Class aaformMainWindow
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.statusbarMainWindow = New System.Windows.Forms.StatusStrip()
+        Me.statuslabelFilePath = New System.Windows.Forms.ToolStripStatusLabel()
         Me.menubarMainWindow = New System.Windows.Forms.MenuStrip()
         Me.menubarFileMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.menubarFileMenuExitButton = New System.Windows.Forms.ToolStripMenuItem()
@@ -34,6 +35,7 @@ Partial Class aaformMainWindow
         Me.buttonSearch = New System.Windows.Forms.Button()
         Me.tablelayoutpanelMainWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.textboxOutput = New System.Windows.Forms.TextBox()
+        Me.statusbarMainWindow.SuspendLayout()
         Me.menubarMainWindow.SuspendLayout()
         Me.tablelayoutpanelMainWindow.SuspendLayout()
         Me.SuspendLayout()
@@ -41,11 +43,20 @@ Partial Class aaformMainWindow
         'statusbarMainWindow
         '
         Me.statusbarMainWindow.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.statusbarMainWindow.Location = New System.Drawing.Point(0, 386)
+        Me.statusbarMainWindow.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statuslabelFilePath})
+        Me.statusbarMainWindow.Location = New System.Drawing.Point(0, 383)
         Me.statusbarMainWindow.Name = "statusbarMainWindow"
         Me.statusbarMainWindow.Padding = New System.Windows.Forms.Padding(1, 0, 18, 0)
-        Me.statusbarMainWindow.Size = New System.Drawing.Size(500, 22)
+        Me.statusbarMainWindow.Size = New System.Drawing.Size(500, 25)
         Me.statusbarMainWindow.TabIndex = 0
+        '
+        'statuslabelFilePath
+        '
+        Me.statuslabelFilePath.Name = "statuslabelFilePath"
+        Me.statuslabelFilePath.Size = New System.Drawing.Size(442, 20)
+        Me.statuslabelFilePath.Spring = True
+        Me.statuslabelFilePath.Text = "statuslabelFilePath"
+        Me.statuslabelFilePath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'menubarMainWindow
         '
@@ -101,7 +112,7 @@ Partial Class aaformMainWindow
         '
         Me.textboxInput.Dock = System.Windows.Forms.DockStyle.Fill
         Me.textboxInput.Location = New System.Drawing.Point(4, 4)
-        Me.textboxInput.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.textboxInput.Margin = New System.Windows.Forms.Padding(4)
         Me.textboxInput.Name = "textboxInput"
         Me.textboxInput.Size = New System.Drawing.Size(403, 22)
         Me.textboxInput.TabIndex = 0
@@ -110,7 +121,7 @@ Partial Class aaformMainWindow
         '
         Me.buttonSearch.Dock = System.Windows.Forms.DockStyle.Fill
         Me.buttonSearch.Location = New System.Drawing.Point(415, 4)
-        Me.buttonSearch.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.buttonSearch.Margin = New System.Windows.Forms.Padding(4)
         Me.buttonSearch.Name = "buttonSearch"
         Me.buttonSearch.Size = New System.Drawing.Size(81, 27)
         Me.buttonSearch.TabIndex = 1
@@ -127,12 +138,12 @@ Partial Class aaformMainWindow
         Me.tablelayoutpanelMainWindow.Controls.Add(Me.textboxOutput, 0, 1)
         Me.tablelayoutpanelMainWindow.Dock = System.Windows.Forms.DockStyle.Fill
         Me.tablelayoutpanelMainWindow.Location = New System.Drawing.Point(0, 28)
-        Me.tablelayoutpanelMainWindow.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tablelayoutpanelMainWindow.Margin = New System.Windows.Forms.Padding(4)
         Me.tablelayoutpanelMainWindow.Name = "tablelayoutpanelMainWindow"
         Me.tablelayoutpanelMainWindow.RowCount = 2
         Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35.0!))
         Me.tablelayoutpanelMainWindow.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(500, 358)
+        Me.tablelayoutpanelMainWindow.Size = New System.Drawing.Size(500, 355)
         Me.tablelayoutpanelMainWindow.TabIndex = 3
         '
         'textboxOutput
@@ -140,12 +151,12 @@ Partial Class aaformMainWindow
         Me.tablelayoutpanelMainWindow.SetColumnSpan(Me.textboxOutput, 2)
         Me.textboxOutput.Dock = System.Windows.Forms.DockStyle.Fill
         Me.textboxOutput.Location = New System.Drawing.Point(4, 39)
-        Me.textboxOutput.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.textboxOutput.Margin = New System.Windows.Forms.Padding(4)
         Me.textboxOutput.Multiline = True
         Me.textboxOutput.Name = "textboxOutput"
         Me.textboxOutput.ReadOnly = True
         Me.textboxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.textboxOutput.Size = New System.Drawing.Size(492, 315)
+        Me.textboxOutput.Size = New System.Drawing.Size(492, 312)
         Me.textboxOutput.TabIndex = 2
         '
         'aaformMainWindow
@@ -157,9 +168,11 @@ Partial Class aaformMainWindow
         Me.Controls.Add(Me.statusbarMainWindow)
         Me.Controls.Add(Me.menubarMainWindow)
         Me.MainMenuStrip = Me.menubarMainWindow
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "aaformMainWindow"
         Me.Text = "HTML Character Code Acquisition Program"
+        Me.statusbarMainWindow.ResumeLayout(False)
+        Me.statusbarMainWindow.PerformLayout()
         Me.menubarMainWindow.ResumeLayout(False)
         Me.menubarMainWindow.PerformLayout()
         Me.tablelayoutpanelMainWindow.ResumeLayout(False)
@@ -181,4 +194,5 @@ Partial Class aaformMainWindow
     Friend WithEvents buttonSearch As Button
     Friend WithEvents tablelayoutpanelMainWindow As TableLayoutPanel
     Friend WithEvents textboxOutput As TextBox
+    Friend WithEvents statuslabelFilePath As ToolStripStatusLabel
 End Class

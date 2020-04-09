@@ -45,9 +45,11 @@ Public Class aaformMainWindow
         ' application's Resources, but the XML file isn't close enough
         ' to completion for that to make sense.
         ' TODO: Allow the XML file to be pulled from application resources.
-        xmlFileToSearch.Load(IO.Directory.GetCurrentDirectory & "\searchXml.xml")
+        Dim fileToLoad As String = IO.Directory.GetCurrentDirectory & "\searchXml.xml"
+        xmlFileToSearch.Load(fileToLoad)
         Debug.WriteLine("XML file contents:")
         Debug.WriteLine(xmlFileToSearch.OuterXml.ToString.Replace("_", "&"))
+        statuslabelFilePath.Text = fileToLoad
 #End Region
 
         ' Display the entire XML file if the user wants
