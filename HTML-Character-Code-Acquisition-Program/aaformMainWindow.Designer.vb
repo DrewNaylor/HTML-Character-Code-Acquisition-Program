@@ -35,6 +35,9 @@ Partial Class aaformMainWindow
         Me.buttonSearch = New System.Windows.Forms.Button()
         Me.tablelayoutpanelMainWindow = New System.Windows.Forms.TableLayoutPanel()
         Me.textboxOutput = New System.Windows.Forms.TextBox()
+        Me.ReloadXMLFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenXMLFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.statusbarMainWindow.SuspendLayout()
         Me.menubarMainWindow.SuspendLayout()
         Me.tablelayoutpanelMainWindow.SuspendLayout()
@@ -71,7 +74,7 @@ Partial Class aaformMainWindow
         '
         'menubarFileMenu
         '
-        Me.menubarFileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menubarFileMenuExitButton})
+        Me.menubarFileMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenXMLFileToolStripMenuItem, Me.ReloadXMLFileToolStripMenuItem, Me.ToolStripSeparator1, Me.menubarFileMenuExitButton})
         Me.menubarFileMenu.Name = "menubarFileMenu"
         Me.menubarFileMenu.Size = New System.Drawing.Size(44, 24)
         Me.menubarFileMenu.Text = "&File"
@@ -159,6 +162,23 @@ Partial Class aaformMainWindow
         Me.textboxOutput.Size = New System.Drawing.Size(492, 312)
         Me.textboxOutput.TabIndex = 2
         '
+        'ReloadXMLFileToolStripMenuItem
+        '
+        Me.ReloadXMLFileToolStripMenuItem.Name = "ReloadXMLFileToolStripMenuItem"
+        Me.ReloadXMLFileToolStripMenuItem.Size = New System.Drawing.Size(189, 26)
+        Me.ReloadXMLFileToolStripMenuItem.Text = "&Reload XML file"
+        '
+        'OpenXMLFileToolStripMenuItem
+        '
+        Me.OpenXMLFileToolStripMenuItem.Name = "OpenXMLFileToolStripMenuItem"
+        Me.OpenXMLFileToolStripMenuItem.Size = New System.Drawing.Size(189, 26)
+        Me.OpenXMLFileToolStripMenuItem.Text = "&Open XML file"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(186, 6)
+        '
         'aaformMainWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
@@ -195,4 +215,7 @@ Partial Class aaformMainWindow
     Friend WithEvents tablelayoutpanelMainWindow As TableLayoutPanel
     Friend WithEvents textboxOutput As TextBox
     Friend WithEvents statuslabelFilePath As ToolStripStatusLabel
+    Friend WithEvents ReloadXMLFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenXMLFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
 End Class
