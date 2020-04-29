@@ -73,6 +73,9 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="libportablethemeengine">
+      <HintPath>..\lib\libportablethemeengine.dll</HintPath>
+    </Reference>
     <Reference Include="PortableUXLLauncher_ThemeEngine">
       <HintPath>..\..\UXL-Launcher\PortableUXLLauncher_ThemeEngine\bin\Debug\PortableUXLLauncher_ThemeEngine.dll</HintPath>
     </Reference>
